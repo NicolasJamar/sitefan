@@ -157,6 +157,11 @@ input:checked + label {
   height: auto;
 }
 
+.bibimg{
+	display: flex;
+	justify-content: center;
+}
+
 h3 {
   font:700 20px/26px 'Lato', sans-serif;
   color:#ffffff;
