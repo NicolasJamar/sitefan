@@ -31,7 +31,7 @@ p {
 
 main {
   min-width: 320px;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   margin: 0 10vw;
   background: #fff;
 }
@@ -197,21 +197,20 @@ p {
 
 }
 
-nav.content{
-	margin: 0 15vw !important;
-
-}
-
-a.nav{
-	justify-content: center;
+.black-line{
+	display: block;
+	width: 100%;
+	height: 30px;
+	background-color: #000;
 }
 
 .positionfixed{
-	position: fixed;
+	position: sticky;
+	top: 400px;
 }
 
 footer {
-  background-color: #2C3E50;
+  background-color: #000;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #fff !important; 
