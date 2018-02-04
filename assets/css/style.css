@@ -15,7 +15,7 @@ html, body {
 body {
   font: 14px/1 'Open Sans', sans-serif;
   color: #000;
-  background: #ff0000;
+  background: #831218;
 }
 
 h1 {
@@ -28,7 +28,6 @@ p {
   margin: 0 0 20px;
   line-height: 1.5;
 }
-
 main {
   min-width: 320px;
   padding: 20px 50px 50px 50px;
@@ -36,10 +35,11 @@ main {
   background: #fff;
 }
 
+
 section {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #831218;
 }
 
 input {
@@ -90,7 +90,7 @@ label:hover {
 input:checked + label {
   color: #555;
   border: 1px solid #ddd;
-  border-top: 2px solid red;
+  border-top: 2px solid #831218;
   border-bottom: 1px solid #fff;
 }
 
@@ -151,11 +151,35 @@ input:checked + label {
 
 .acc-content-inner {
   padding:30px;
+
 }
+
+.acc-content {
+	background-color: #831218;
+	border: solid 1px white; 
+}
+
+.acc-content h3 {
+	background-color: #831218;
+	border: solid 1px white; 
+}
+.acc-content p {
+	color: white;
+}
+
+h3.selected {
+	color: white;
+}
+
+.acc-btn {
+	background-color: black;
+}
+
 
 .open {
   height: auto;
 }
+
 
 .bibimg{
 	display: flex;
