@@ -104,7 +104,6 @@ ul.tabs , .tabs li {
 }
 
 .tabs a{
-	margin: 0 0 -1px;
   	padding: 15px 25px;
   	font-weight: 600;
   	text-align: center;
@@ -136,7 +135,6 @@ ul.tabs , .tabs li {
 }
 
 /*PETITS ONGLETS A GAUCHE*/
-
 .nav-link {
 	color:black;
 }
@@ -166,10 +164,6 @@ ul.tabs , .tabs li {
 .acc-container {
   width:90%;
   margin:30px auto 0 auto;
-/*  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  -o-border-radius:8px;
-  border-radius:8px;*/
   overflow:hidden;
 }
 
