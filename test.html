@@ -29,28 +29,22 @@
 	</header>
 	<main>
 	<!-- ONGLETS -->
-		
-		<input class="hidden" id="tab1" type="radio" name="tabs" checked>
-		<label for="tab1">Présentation</label>
 
-		<input class="hidden" id="tab2" type="radio" name="tabs">
-		<label for="tab2">Biographie</label>
-
-		<input class="hidden" id="tab3" type="radio" name="tabs">
-		<label for="tab3">Photographies</label>
-
-		<input class="hidden" id="tab4" type="radio" name="tabs">
-		<label for="tab4">Goodies</label>
-
-		<input class="hidden" id="tab5" type="radio" name="tabs">
-		<label for="tab5">Contact</label>
+		<div id="container-global">
+            <ul class="tabs">
+                <li class="active"><a href="#presentation"><i class="fa fa-home"></i>  <span class="hide-media">Accueil</span></a></li>
+                <li><a href="#biographie"><i class="fa fa-star"></i>  <span class="hide-media">Biographie</span></a></li>
+                <li><a href="#photographies"><i class="fa fa-camera-retro"></i>  <span class="hide-media">Photographies</span></a></li>
+                <li><a href="#goodies"><i class="fa fa-shopping-basket"></i>  <span class="hide-media">Goodies</span></a></li>
+                <li><a href="#contactus"><i class="fa fa-envelope"></i>  <span class="hide-media">Contact</span></a></li>
+            </ul>
 		
 	<!-- PRESENTATION -->
-		<section id="content1">
-			<div class="tab-pane fade show active" id="nav-presentation" role="tabpanel" aria-labelledby="nav-presentation-tab">
+		<div class="tabs-content">
+                <div class="tab-contents active" id="presentation">
 				<div class="row">
 					<div class="col-lg-3 col-md-3">
-						<div class="nav flex-column nav-pills positionfixed" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 							<a class="nav-link active" id="v-pills-film-tab" data-toggle="pill" href="#v-pills-film" role="tab" aria-controls="v-pills-film" aria-selected="false">
 								Film
 							</a>
@@ -222,9 +216,9 @@
 						</div>
 					</div>
 				</div>
-		</section>
+		</div>
 	<!-- BIOGRAPHIE -->
-	<section id="content2">
+	<div class="tab-contents" id="biographie"> 
 		<div class="acc-container">
 			<div class="acc-btn"><h3 class="selected">Le commencement</h3></div>
 			<div class="acc-content open">
@@ -288,9 +282,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- PHOTOGRAPHIES -->
-		<section id="content3">
+		<div class="tab-contents" id="photographies">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   				<ol class="carousel-indicators">
    					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -317,12 +311,12 @@
     				<span class="sr-only">Next</span>
   				</a>
 			</div>
-		</section>
+		</div>
 
 	<!-- GOODIES -->
-		<section id="content4" class="goodies">
+		<div id="goodies" class="tab-contents">
 			<div class="row w-100 m-0">
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_11844672520160417163655.jpg">
 						<div class="card-body">
@@ -343,7 +337,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_126320131220114843.jpg">
 						<h3>Grave</h3>
@@ -361,7 +355,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_230920131220115322.jpg">
 						<h3>Survive Style</h3>
@@ -371,7 +365,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_30904672520161205190723.jpg">
 						<h3>Gran Torino</h3>
@@ -381,7 +375,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_33254820141014170309.jpg">
 						<h3>Empire strike back</h3>
@@ -391,7 +385,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_41274672620161121180621.jpg">
 						<h3>Grave</h3>
@@ -401,7 +395,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_815420131220115902.jpg">
 						<h3>Survive Style</h3>
@@ -411,7 +405,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-4 col-6 vignettes v-shop-js">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
 					<div class="card">
 						<img class="card-img-top" src="assets/img/aff_41274672620161121180621.jpg">
 						<h3>Gran Torino</h3>
@@ -428,10 +422,10 @@
 						<span id="total">0 €</span>
 					</div>
 				</div>
-		</section>
+		</div>
 	<!-- CONTACT -->
-		<section id="content5">
-		<form>
+		<div id="contactus" class="tab-contents">
+				<form>
 					<div class="container">
 						<h2 id="contact">Contacter le Père Noel!</h2>
 						<div class="form-row">
@@ -456,7 +450,9 @@
 						<button type="submit" class="btn btn-primary mb-2">ENVOYER LE MESSAGE</button>
 					</div>
 				</form>
-		</section>
+		</div>
+	</div>
+	</div>
 		
 	</main>
 
@@ -499,18 +495,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="assets/js/allezCine.js"></script>
-	<script>
-      $('#plus').click(function() {
-        var compteur = parseInt($("#resultat").val());
-        compteur = compteur + 1;
-        $("#resultat").val(compteur);
-      });
-      $('#moins').click(function() {
-        var compteur = parseInt($("#resultat").val());
-        compteur = compteur - 1;
-        $("#resultat").val(compteur);
-      });
-    </script>
+	
 
 
 </body>
