@@ -67,7 +67,7 @@ section {
 	justify-content: space-around;
 }
 
-input {
+.hidden {
   display: none;
 }
 
@@ -287,6 +287,17 @@ p {
 	justify-content: space-between;
 	padding: 0 0.5rem;
 }
+
+.goodies form{
+	/*width: 40px;*/
+	/*height: 40px;*/
+}
+
+.goodies input{
+	width: 30px;
+	/*height: 30px;*/
+}
+
 
 
 
