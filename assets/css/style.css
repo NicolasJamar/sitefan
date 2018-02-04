@@ -230,6 +230,32 @@ p {
 	height: auto;
 }
 
+ .carouimg{
+ 	height: 916px !important;
+ }
+
+ .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary{
+	color: #fff;
+    background-color: #831218;
+    border-color: #831218;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #461010;
+    border-color: #831218;
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem !important;
+}
+
 /*NIC*/
 
 .red{
