@@ -1,0 +1,48 @@
+.red{
+	color: #FE4240;
+}
+
+.hidden{
+	display: none;
+}
+
+.jumbotron{
+	height: 50vh;
+}
+
+.jumbotron .container{
+	height: 100%;
+}
+
+.jumbotron h1{
+
+}
+
+nav.content{
+	margin: 0 15vw !important;
+
+}
+
+a.nav{
+	justify-content: center;
+}
+
+.positionfixed{
+	position: fixed;
+}
+
+footer {
+  background-color: #2C3E50;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff !important; 
+}
+footer a {
+    line-height: 30px !important;
+    border-radius: 100% !important; }
+
+
+
+
+
+  
