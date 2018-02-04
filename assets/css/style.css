@@ -8,10 +8,16 @@
 
 .jumbotron{
 	height: 50vh;
+	
 }
 
 .jumbotron .container{
 	height: 100%;
+
+}
+
+.jumbotron .jumbotron-fluid{
+	background-image: url(assets/img/abc.jpg);
 }
 
 .jumbotron h1{
