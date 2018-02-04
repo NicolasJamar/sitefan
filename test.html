@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site de fans</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://use.fontawesome.com/098e46151b.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<!-- JUMBOTRON -->
+		<div class="jumbotron jumbotron-fluid p-0 m-0">
+			<div class="container">
+				<h1 class="display-4">Fluid jumbotron</h1>
+			</div>
+		</div>
+		<!-- End: JUMBOTRON -->
+	</header>
+	<main>
+
+		<input id="tab1" type="radio" name="tabs" checked>
+		<label for="tab1">Présentation</label>
+
+		<input id="tab2" type="radio" name="tabs">
+		<label for="tab2">Biographie</label>
+
+		<input id="tab3" type="radio" name="tabs">
+		<label for="tab3">Photographies</label>
+
+		<input id="tab4" type="radio" name="tabs">
+		<label for="tab4">Goodies</label>
+
+		<input id="tab5" type="radio" name="tabs">
+		<label for="tab5">Contact</label>
+
+		<section id="content1">
+
+			<div class="tab-pane fade show active" id="nav-presentation" role="tabpanel" aria-labelledby="nav-presentation-tab">
+				<div class="row">
+					<div class="col-lg-2 col-md-2">
+						<div class="nav flex-column nav-pills positionfixed" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<a class="nav-link active" id="v-pills-litterature-tab" data-toggle="pill" href="#v-pills-litterature" role="tab" aria-controls="v-pills-litterature" aria-selected="false">
+								Littérature
+							</a>
+							<a class="nav-link" id="v-pills-films-tab" data-toggle="pill" href="#v-pills-films" role="tab" aria-controls="v-pills-films" aria-selected="false">
+								Films
+							</a>
+							<a class="nav-link" id="v-pills-dessins-tab" data-toggle="pill" href="#v-pills-dessins" role="tab" aria-controls="v-pills-dessins" aria-selected="false">
+								Dessins animés
+							</a>
+							<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+								Autres
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-10">
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="v-pills-litterature" role="tabpanel" aria-labelledby="v-pills-litterature-tab">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis labore nulla, quod consequuntur, asperiores aspernatur voluptatibus quos est dolor. Deleniti rem dicta recusandae iure, atque est dolorem nihil harum.
+							</div>
+							<div class="tab-pane fade" id="v-pills-films" role="tabpanel" aria-labelledby="v-pills-films-tab">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta nemo aut laborum quos nesciunt voluptates ipsam similique exercitationem et ad blanditiis unde placeat consequuntur iste beatae, rem atque distinctio.
+							</div>
+							<div class="tab-pane fade" id="v-pills-dessins" role="tabpanel" aria-labelledby="v-pills-dessins-tab">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolore rerum quas provident natus veniam. Quae eius accusamus illo optio, in vero delectus sit earum. Id quo amet facere, doloribus!
+							</div>
+							<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta ut neque suscipit perferendis, quisquam fuga, consequatur perspiciatis quasi ab vitae facilis maiores pariatur excepturi soluta, et ducimus ipsa eos!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="content2">
+			<div class="acc-container">
+				<div class="acc-btn"><h3 class="selected">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3></div>
+				<div class="acc-content open">
+					<div class="acc-content-inner">
+						<p>Proin sodales, nibh eget sollicitudin consectetur, elit nisl malesuada urna, ac fermentum turpis urna id augue. Vestibulum eu consectetur nunc. In ultricies erat nisl, a fringilla risus viverra sed. Phasellus vel sodales elit. Morbi nec adipiscing dolor. Vivamus volutpat vitae velit vel sagittis.</p>
+					</div>
+				</div>
+
+				<div class="acc-btn"><h3>Curabitur et diam vitae dolor accumsan aliquet et in massa.</h3></div>
+				<div class="acc-content">
+					<div class="acc-content-inner">
+						<p>Nulla facilisi. Proin sodales dolor in odio lacinia, ut venenatis massa lobortis. Morbi congue dignissim nisi gravida consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed egestas diam. Nunc ut mauris tempus, rutrum massa vel, pellentesque velit. Nullam eget diam sit amet diam pretium scelerisque. Nunc sed odio nisi. Nunc odio est, rhoncus vitae risus a, sagittis ultrices mauris. Fusce scelerisque posuere pulvinar.</p>
+					</div>
+				</div>
+
+				<div class="acc-btn"><h3>Proin faucibus sem sed dapibus dapibus.</h3></div>
+				<div class="acc-content">
+					<div class="acc-content-inner">
+						<p>Praesent ultricies risus quis magna convallis, ac condimentum tellus laoreet. Donec dictum velit enim, nec hendrerit leo mattis sit amet.</p>
+					</div>
+				</div>
+
+				<div class="acc-btn"><h3>Praesent lobortis urna non est faucibus, vestibulum mattis diam sollicitudin.</h3></div>
+				<div class="acc-content">
+					<div class="acc-content-inner">
+						<p>Fusce eget ultricies ante. In augue urna, rhoncus ac tellus non, porta malesuada magna. Nulla tincidunt orci in metus rhoncus, at malesuada quam varius. Mauris sed tincidunt massa, ut cursus magna. Pellentesque cursus sapien turpis, id blandit magna tempus at.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content3">
+			<p>
+				Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+			</p>
+			<p>
+				Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+			</p>
+		</section>
+
+		<section id="content4">
+			<div class="row">
+			<!-- Tri par Genre :  -->
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Comedie">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/WhatWeDoInTheShadows-2014-comedie.jpg">
+							<h3>What we do in the shadows</h3>
+							<span>2014</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Comedie">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/swissarmyman-2016-comedie.jpg">
+							<h3>Swiss Army Man</h3>
+							<span>2016</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Dramatique">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/thefall-2006-dramatique.jpg">
+							<h3>The Fall</h3>
+							<span>2006</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Comedie">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/Survivestyle5-2004-comedie.jpg">
+							<h3>Rezort</h3>
+							<span>2016</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Thriller">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/shutterisland-2010-thriller.jpg">
+							<h3>Shutter Island</h3>
+							<span>2010</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 vignettes Thriller">
+						<div class="card m-0">
+							<img class="card-img-top" src="assets/img/seven-1995-thriller.jpg">
+							<h3>Seven</h3>
+							<span>1995</span>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section id="content5">
+			<p>
+				Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+			</p>
+			<p>
+				Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+			</p>
+		</section>
+		
+	</main>
+
+	<footer class="footer text-center" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						© Nicolas Jamar
+					</div>
+					<div class="col-sm">
+						<h4 class="text-uppercase mb-4">Réseaux sociaux</h4>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a class="btn btn-outline-light btn-social text-center" href="https://github.com/NicolasJamar/" target="_blank">
+									<i class="fa fa-fw fa-github"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn btn-outline-light btn-social text-center" href="https://www.linkedin.com/in/nicolas-jamar-26123814b/" target="_blank">
+									<i class="fa fa-fw fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn btn-outline-light btn-social text-center" href="https://twitter.com/JamarNicolas?lang=fr" target="_blank">
+									<i class="fa fa-fw fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm">
+						Fait avec Bootstrap
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="assets/js/allezCine.js"></script>
+
+
+</body>
+
+</html>
