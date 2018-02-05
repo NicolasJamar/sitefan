@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Site de fans</title>
+	<title>Fans du Père Noel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -11,6 +11,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,900" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.google.com/specimen/Rouge+Script?selection.family=Rouge+Script" rel="stylesheet">
 </head>
 
 <body>
@@ -18,179 +19,438 @@
 		<!-- JUMBOTRON -->
 		<div class="jumbotron jumbotron-fluid p-0 m-0">
 			<div class="container">
-				<h1 class="display-4">Fluid jumbotron</h1>
+				<h1 class="display-4">Bienvenue sur le Site du père Noël</h1>
 			</div>
 		</div>
-		<nav class="content">
-			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="nav-presentation-tab" data-toggle="tab" href="#nav-presentation" role="tab" aria-controls="nav-presentation" aria-selected="true">
-					Présentation
-				</a>
-				<a class="nav-item nav-link" id="nav-bio-tab" data-toggle="tab" href="#nav-bio" role="tab" aria-controls="nav-bio" aria-selected="false">
-					Biographie
-				</a>
-				<a class="nav-item nav-link" id="nav-photo-tab" data-toggle="tab" href="#nav-photo" role="tab" aria-controls="nav-photo" aria-selected="false">
-					Photographies
-				</a>
-				<a class="nav-item nav-link" id="nav-goodies-tab" data-toggle="tab" href="#nav-goodies" role="tab" aria-controls="nav-goodies" aria-selected="false">
-					Goodies
-				</a>
-				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
-					Contact
-				</a>
-			</div>
-		</nav>
 		<!-- End: JUMBOTRON -->
+		<div class="black-line">
+			
+		</div>
 	</header>
 	<main>
-		<div class="tab-content" id="nav-tabContent">
-			<div class="tab-pane fade show active" id="nav-presentation" role="tabpanel" aria-labelledby="nav-presentation-tab">
+	<!-- ONGLETS -->
+
+		<div id="container-global">
+            <ul class="tabs">
+                <li class="active"><a href="#presentation"><i class="fa fa-home"></i>  <span class="hide-media">Accueil</span></a></li>
+                <li><a href="#biographie"><i class="fa fa-star"></i>  <span class="hide-media">Biographie</span></a></li>
+                <li><a href="#photographies"><i class="fa fa-camera-retro"></i>  <span class="hide-media">Photographies</span></a></li>
+                <li><a href="#goodies"><i class="fa fa-shopping-basket"></i>  <span class="hide-media">Goodies</span></a></li>
+                <li><a href="#contactus"><i class="fa fa-envelope"></i>  <span class="hide-media">Contact</span></a></li>
+            </ul>
+		
+	<!-- PRESENTATION -->
+		<div class="tabs-content">
+                <div class="tab-contents active" id="presentation">
 				<div class="row">
-					<div class="col-lg-2 col-md-2">
-						<div class="nav flex-column nav-pills positionfixed" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<a class="nav-link active" id="v-pills-litterature-tab" data-toggle="pill" href="#v-pills-litterature" role="tab" aria-controls="v-pills-litterature" aria-selected="false">
-								Littérature
-							</a>
-							<a class="nav-link" id="v-pills-films-tab" data-toggle="pill" href="#v-pills-films" role="tab" aria-controls="v-pills-films" aria-selected="false">
-								Films
+					<div class="col-lg-3 col-md-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<a class="nav-link active" id="v-pills-film-tab" data-toggle="pill" href="#v-pills-film" role="tab" aria-controls="v-pills-film" aria-selected="false">
+								Film
 							</a>
 							<a class="nav-link" id="v-pills-dessins-tab" data-toggle="pill" href="#v-pills-dessins" role="tab" aria-controls="v-pills-dessins" aria-selected="false">
-								Dessins animés
+								Dessins-animés
+							</a>
+							<a class="nav-link" id="v-pills-litterature-tab" data-toggle="pill" href="#v-pills-litterature" role="tab" aria-controls="v-pills-litterature" aria-selected="false">
+								Littérature
 							</a>
 							<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-								Autres
+								Chants de Noel
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-10 col-md-10">
+					<div class="col-lg-9 col-md-9">
 						<div class="tab-content" id="v-pills-tabContent">
-							<div class="tab-pane fade show active" id="v-pills-litterature" role="tabpanel" aria-labelledby="v-pills-litterature-tab">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis labore nulla, quod consequuntur, asperiores aspernatur voluptatibus quos est dolor. Deleniti rem dicta recusandae iure, atque est dolorem nihil harum.
-							</div>
-							<div class="tab-pane fade" id="v-pills-films" role="tabpanel" aria-labelledby="v-pills-films-tab">
-							...
-							</div>
+							<div class="tab-pane fade show active" id="v-pills-film" role="tabpanel" aria-labelledby="v-pills-litterature-tab">
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_815420131220115902.jpg">
+       								<p><span>Le père Noel</span><br>Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+       								<span>2014</span>
+       							</div>
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_897820131220114621.jpg">
+       								<p><span>Bad Santa</span><br>Le père noël peut aussi être tès 'bad' parfois, comme le montre Billy Bob Thornton. Il est ivre mort, il injure et il insulte presque tout le monde qu'il rencontre. Il faut espérer qu'il ne descende pas votre chéminée jeudi soir...</p>
+       								<span>2003</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_30904672520161205190723.jpg">
+       								<p><span>Le père Noel est une ordure</span><br>Que dire du Père Noël est une ordure? Tout le monde l'a vu et revu, mais quoi de mieux pour passer des bonnes vacances? La bande du splendid fête Noël à sa manière dans ce film culte signé Jean-Marie Poiré.</p>
+       								<span>1982</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_42894672620161212132755.jpg">
+       								<p><span>Bad Santa 2</span><br>Le plus horrible des Pères Noêl de supermarché est de retour, accompagné de son complice déguisé en lutin vert. Pour de nouveaux mauvais coups, et de nouvelles blagues trash. Une comédie américaine délirante qui lance l'esprit de Noêl en plein dans le mauvais goût.</p>
+       								<span>2016</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_681920131220122511 (1).jpg">
+       								<p><span>Santa Claus</span><br>Jeannot Swarc présente son oeuvre de Noël Santa Claus. Dudley Moore, un elfe expulsé du pôle nord, va essayer de travailler pour un grand capitaliste dans la ville. C'est un film qui prouve que l'esprit de Noël est plus fort que l'argent et le capitalisme.</p>
+       								<span>1985</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_126320131220114843.jpg">
+       								<p><span>Elfe</span><br>Buddy, un humain adulte elevé par des elfes, retourne chez lui pour rencontrer son père pour la première fois. Ce dernier (James Caan), qui va intialement prendre son fils pour un fou, sera étonné et ébloui par l'arrivée de cet étranger magique...</p>
+       								<span>2003</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_510020131220115635.jpg">
+       								<p><span>Noel Blanc</span><br>Une répresentation du père noël assez atypique par Jeunet et Caro, mais quand est-ce que ces deux réalisateurs ont fait des choses banales? Si vous en avez marre des films de Noël un peu trop 'cute', essayez la Cité des enfants perdus. Vous ne serez surement pas déçus.</p>
+       								<span>1954</span>
+       							</div>
+       						</div>
 							<div class="tab-pane fade" id="v-pills-dessins" role="tabpanel" aria-labelledby="v-pills-dessins-tab">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolore rerum quas provident natus veniam. Quae eius accusamus illo optio, in vero delectus sit earum. Id quo amet facere, doloribus!
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_114620131220115225.jpg">
+       								<p><span>Le père Noel</span><br>Dans cette comédie française, le Père Noël est un cambrioleur qui vole des bijoux. Un voleur au grand coeur, bien sûr, qui va former un duo avec un garçon rêveur, et se lancer dans une nuit de Noël folle, sur les toits.</p>
+       								<span>2014</span>
+       							</div>
+						
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_230920131220115322.jpg">
+       								<p><span>Le Pole Express</span><br>Alors qu'il commence à sérieusement douter de l'existence du Père Noël, un jeune garçon embarque à bord d'un train mystérieux : Le Pôle express, destination le pôle Nord. Le jeune aventurier et ses compagnons de voyage embarqués dans cette aventure vont découvrir leurs capacités et toutes leurs richesses.</p>
+       								<span>2004</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/aff_11844672520160417163655.jpg">
+       								<p><span>L'étrange noel de Mr Jack</span><br>Jack Skellington est roi des citrouilles. A Halloween-ville, c'est lui qui a la charge de préparer la fête d'Halloween tous les ans...mais il se lasse et aimerait innover. Jusqu'au moment ou il décide de s'occuper de la préparation de la fête de Noël...Voilà qui va dépoter.</p>
+       								<span>1993</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/scrooge.jpg">
+       								<p><span>Le drôle de Noel de Scrooge</span><br>Ebenezer Scrooge est certainement le plus riche des commerçants de Londres. Mais c'est aussi le plus avare. Rien ne le touche, rien ne l'émeut. Il n'aime pas les gens et il n'aime pas Noël. Mais cette année, la veille de Noël, il va être victime d'hallucinations et sera confronté aux esprits des Noëls passés. Les vieilles blessures ré-ouvertes arriveront-elles à le faire changer et à modifier ses agissements ?</p>
+       								<span>2009</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/grelot.jpg">
+       								<p><span>L'enfant au grelot</span><br>Lorsque le facteur Grand-Jacques, découvre un nouveau né tout droit tombé du ciel, il est bien étonné. Mis qui est donc ce bébé qui serre dans sa petite main un grelot et qui sait parler aux étoiles ?</p>
+       								<span>2004</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/manga.jpg">
+       								<p><span>L'apprenti Père Noël</span><br>Avant de prendre sa retraite, le Père Noël doit obligatoirement choisir un apprenti appelé à le remplacer. Les critères de choix sont fixes : L'apprenti devra se prénommer Nicolas, être orphelin et avoir le coeur pur. Il y a bien un petit garçon qui répond parfaitement à ces critères, mais avec son vertige et son manque de confiance en lui, la mission est loin d'être remplie. La Père Noël voudra-t-il et pourra-t-il former cet apprenti ?.</p>
+       								<span>2010</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/niko.jpg">
+       								<p><span>Niko le petit renne</span><br>Dans la vallée des rennes, vit Niko avec sa maman et son troupeau. Si tout va bien pour lui, Niko rêve secrètement d'aller retrouver son père qui travaille dans la brigade du Père Noël. Pour cela, il s'entraîne à voler dans l'espoir de le rejoindre. Devant l'inefficacité de ses démarches, il décide de partir à pieds pour enfin le rencontrer. Son parcours sera semé d'embûches et de belles rencontres. Il devra déployer des trésors de courage et de volonté pour atteindre son but et son rêve.</p>
+       								<span>2008</span>
+       							</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-litterature" role="tabpanel" aria-labelledby="v-pills-litterature-tab">
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/l1.jpg">
+       								<p><span>Un cadeau du ciel</span><br>Lou a une vie parfaite, une femme magnifique, deux enfants adorables et un travail qui le comble. Mais la réussite a un prix et Lou est prêt à tout pour parvenir au sommet. En se rendant au travail un matin d'hiver dans les rues enneigées de Dublin, Lou fait la connaissance de Gabe, un sans-abri qu'il croise tous les jours. Sa vie ne sera plus jamais la même car Gabe n'est pas un homme comme les autres..</p>
+       								<span>2009</span>
+       							</div>
+						
+								<div class="movies">
+									<img class="iconfilm" src="assets/img/l2.jpg">
+       								<p><span>Le Sapin</span><br>Il était une fois un petit sapin qui brûlait d'impatience de grandir, de devenir aussi grand et aussi beau que les majestueux sapins qui l'entouraient. Où allaient-ils ainsi ces arbres somptueux qu'à l'approche de Noël, les bûcheronsvenaient couper et emporter dans leurs charrettes ?Son tour viendrait-il enfin ?.</p>
+       								<span>2008</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/l3.jpg">
+       								<p><span>Noel sur Ganymède</span><br>Des sang-mêlé, métissés de Terriens et de Martiens, vivent sur Vénus, sans embêter personne. Mais voilà qu'un groupe de " Terrestres " débarquent, envahisseurs contre lesquels il leur faudra bien se résoudre à se défendre... Deux jumeaux élevés chacun sur une planète différente se rencontrent pour la première fois, étrangers du cosmos qui ont pourtant le même sang. </p>
+       								<span>1998</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/l4.jpg">
+       								<p><span>Un noel à River Falls</span><br>Alors que la petite ville de River Falls s’apprête à célébrer Noël, un drame vient raviver le souvenir des horreurs du passé : un adolescent est retrouvé mort dans une cabane au fond des bois, d’où un autre a réussi à s’échapper.</p>
+       								<span>2010</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/l5.jpeg">
+       								<p><span>Le noel D'auggie Wren</span><br>Je tiens ce récit d'Auggie Wren. Comme il n'y fait pas très bonne figure, en tout cas pas aussi bonne qu'il le souhaiterait, il m'a demandé de ne pas citer son vrai nom.
+									A part cela, toute l'histoire du portefeuille perdu, de la vieille aveugle et du repas de Noël est décrite ici telle qu'il me l'a racontée.
+									</p>
+       								<span>1998</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/l6.jpg">
+       								<p><span>Le père noel est une ordure</span><br>A la permanence de Détresse-Amitié, la nuit de Noël, Pierre Mortez et Thérèse répondent aux appels téléphoniques des désespérés... Un travesti malheureux, une douce idiote enceinte jusqu'aux yeux, un Yougoslave cuisinier et Félix - une ordure de père Noël - mènent la farce drôle et corrosive, jusqu'au bouquet final d'un feu d'artifice de quiproquos et de délire. </p>
+       								<span>2000</span>
+       							</div>
+       							<div class="movies">
+									<img class="iconfilm" src="assets/img/l7.jpg">
+       								<p><span>Un noel de rêve</span><br>Noël approche. Avec son lot d'étoiles dans les yeux, d'odeurs de pancakes... Cette année, Eddie l'aura son vélo rouge. Il y croit dur comme fer. Même si la chasse aux cadeaux n'a rien donné, les jours précédents. Même si sa mère, qui l'élève seule, peine à joindre les deux bouts. Il n'a pas la vie facile, Eddie. Ce vélo, il l'a bien mérité. Ce vélo qu'il n'aura pas... </p>
+       								<span>2010</span>
+       							</div>
 							</div>
 							<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-							...
+								<div class="movies">
+									<iframe width="700" height="375" src="https://www.youtube.com/embed/yXQViqx6GMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       								<p><span>All I Want For Christmas is You
+									Mariah Carey</span><br>Cet irrésistible hymne à Noël nous rappelle que derrière ses tenues de Barbie, Mariah Carey possède de redoutables cordes vocales. Reprise à toutes les sauces depuis sa parution (dont une malheureuse version avec Justin Bieber), All I Want For Christmas is You, que miss Carey a coécrit avec Walter Afanasieff, a connu un regain de popularité en 2003 grâce au film Love Actually. Une grosse bouffée de bons sentiments.  </p>
+       								<span>1994</span>
+       							</div>
+       							<div class="movies">
+									<iframe width="700" height="375" src="https://www.youtube.com/embed/a3bzFZqKB3c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+       								<p><span>Boom Boom (Merry Little Christmas)
+									Maryse Letarte</span><br>Extrait du premier disque de Noël de Maryse Letarte (son deuxième a paru cette année), Boom Boom est destiné à devenir un classique du temps des Fêtes. Impossible de résister à cette pièce bilingue (Hold me in your arms, mon chéri). «Maryse a vraiment révolutionné le genre, indique Monique Giroux, animatrice à ICI Musique. Même les plus grincheux craquent pour ses chansons de Noël.» Douce, contemporaine et cool, la mélodie accroche un sourire au visage. Un incontournable, selon le programmateur musical à MusiquePlus/MusiMax, Danny Jobidon. </p>
+       								<span>2010</span>
+       							</div>
+       							<div class="movies">
+									<iframe width="700" height="375" src="https://www.youtube.com/embed/u5gm6UxpXzI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       								<p><span>Joyeux Noël et bonne année
+									Villeray </span><br>À Noël, la modération a bien meilleur goût… surtout en musique. Dotée d’une mélodie accrocheuse, cette chanson du duo montréalais Villeray respire le bonheur en évoquant des plaisirs simples d’hiver. «L’école est finie merci / On sort nos patins, on sort nos skis», chantent Stéphane Tremblay et Éric Sénécal. Tout pour retomber en enfance.
+
+									</p>
+       								<span>2008</span>
+       							</div>
+       							<div class="movies">
+									<iframe width="700" height="375" src="https://www.youtube.com/embed/YfF10ow4YEo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       								<p><span>Underneath The Tree
+									Kelly Clarkson</span><br>Une seule écoute et vous l’aurez en tête pendant des jours. Écrit par Kelly Clarkson et Greg Kurstin, ce ver d’oreille apparaît sur Wrapped in Red, le premier album de Noël de celle qui en 2002, gagnait la première édition d’American Idol. 
+									</p>
+       								<span>2013</span>
+       							</div>
+       							<div class="movies">
+									<iframe width="700" height="375" src="https://www.youtube.com/embed/D97aiT7UY9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       								<p><span>C’est nono Noël
+									RBO </span><br>Rock et Belles Oreilles a aussi chanté les joies de Noël. Sur une musique de Gaétan Essiambre, Guy A. Lepage, Yves P. Pelletier, André Ducharme, Bruno Landry et Chantal Francke alignent les rimes signatures RBO. Parmi nos préférées, citons: «Matante Aline est dans le sud pour tromper sa solitude / 3000 piastres pour 8 journées, c’est juste là qu’a s’est faite fourrer».
+									</p>
+       								<span>2010</span>
+       							</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="tab-pane fade container" id="nav-bio" role="tabpanel" aria-labelledby="nav-bio-tab">
-				<article>
-				<button id="show">
-					<h3>
-				Présentation</h3></button>
-				<div class="bouton hidden">
-					<h4>Peux-tu te présenter brièvement?</h4>
-						<ul>
-							<li>Nom : Johan Delforge</li>
-							<li>Âge : 38 ans</li>
-							<li>Résidence : Pont-à-Celles</li>
-							<li>Profession : Web developer fulSlstack</li>
-						</ul>
-					<h4>Où travailles-tu ?</h4>
-						<p>A domicile, comme indépendant via la Smart. Il m’arrive également de travailler lorsque je pars en voyage.</p>
-					<h4>Quelle est ta fonction exacte au sein de l'entreprise ? Au sein de quel département de l'entreprise travailles-tu ?</h4>
-						<p>Je travaille en tant que Web developer full stack. Je suis associé avec un Web designer et/gestionnaire de projet. </p>
-					<h4>Depuis quand exerces-tu ?</h4>
-						<p>3 ans.</p>
-					<h4>Peux-tu me décrire en quoi consiste ton métier ou ton poste ?</h4>
-						<p>Recevoir des psd (fichier photoshop) et en faire des sites. Essentiellement sur Wordpress avec mon thème maison. 
-					Je ne fais pas d’applications. </p>
-					<h4>Quelles tâches annexes peux-tu être amené à accomplir ?</h4>
-						<p>Faire des render vidéo. </p>
-				</div>
-			</article>
-			
-			<article>
-				<button onclick="show2()"><h3>Pourquoi le webdevelopment ?</h3></button>
-					<div id="content2">
-						<h4>Qu’est-ce qui t'a donné envie de faire ce métier ? </h4>
-							<p>Avoir un métier bien payé qui permet d’apprendre constamment. Egalement, travailler à domicile. 
-							A la base, j’ai une passion pour l’informatique. Je monte des PC depuis mes 14 ans.
-							Je possède aussi un esprit matheux. </p>	
-						<h4>Quel est ton parcours ? (études/autodidacte/...) </h4>
-							<p>Ingé son à l’IAD à Mons, à Londres ect… 
-							Ensuite, j’ai réalisé plusieurs albums de musique. 
-							J’ai monté plusieurs projets musicaux. 
-							Concernant le web development, je me suis formé en autodidacte, surtout sur le site Treehouse. </p>
-						<h4>Comment es-tu parvenu à ton emploi actuel ? </h4>
-							<p>J’avais un ami qui était web designer et je lui ai proposé de faire ses sites car il sous-traitait à l’étranger. Je me suis lancé à l’aveugle en réalisant un premier site pour lui. Il n’était pas trop compliqué à réaliser pour un développeur mais je n’y connaissais rien. C’était un défi et surtout un boulot rémunéré. Ca m’a pris 6 semaines pour le réaliser. </p>
-					</div>
-			</article>
+		    </div>
+	<!-- BIOGRAPHIE -->
+           <div class="tab-contents" id="biographie"> 
+                <div class="acc-container">
+                     <div class="acc-btn"><h3 class="selected">Le commencement</h3></div>
+                     <div class="acc-content open">
+                          <div class="acc-content-inner">
+                               <p>En fait, tout commence il y a bien longtemps, en 270 après Jésus Christ.</p>
+                               <p>A cette époque naquit Nicolas de Myre, dans la cité de Patara, en Asie mineure (une région correspondant à la Turquie actuelle.). Se convertissant très tôt au christianisme, le jeune homme fut nommé évêque de Myre par la jeune Église catholique, mais mourut martyr (aux environs de 350 après Jésus Christ.).</p>
+                               <p>Selon la légende, les Romains tuèrent Nicolas de Myre un 6 décembre. Une fois décapité, il aurait jaillit une fontaine d'huile du cou de la victime.</p>
+                               <p>Peu après, l'Église décida de canoniser Nicolas, et choisit de célébrer le saint le 6 décembre de chaque année.</p>
+                               <p>Par la suite, lorsque les Turcs s'emparèrent de Myre, des moines de la ville montrèrent le tombeau de Saint Nicolas à des soldats italiens, originaires de Bari. Ouvrant le cercueil, ils trouvèrent les ossements du Saint baignant dans l'huile, selon la légende. Par la suite, les soldats mirent les os dans une boîte, et rentrèrent chez eux, à Bari (c'est pour cette raison que Saint Nicolas est parfois appelé Nicolas de Bari).</p>
+                               <p>Pour la petite anecdote, sachez qu'au Moyen âge, de nombreux escrocs vendirent de la prétendue "huile sainte", ayant le pouvoir de guérir les malades.</p>	
+                         </div>
+                   </div>
 
-			<article>
-				<button onclick="show3()"><h3>Un bon webdeveloper...</h3></button>
-					<div id="content3">
-						<h4>Quelles sont les qualités personnelles nécessaires pour exercer ce métier selon toi ? </h4>
-							<p>Avoir une écoute active de ses collègues. 
-							Posséder un esprit d’abstraction. Être rationnel, méthodique, juqu’au boutiste. Avoir l’oeil avisé. 
-							Enfin, pouvoir gérer le stress. </p>
-						<h4>Quelles sont les compétences professionnelles exigées dans ce métier ?</h4>
-							<p>Avoir une méthode est la clé pour être efficace. Ca prend plus de temps au début, mais ça finit par payer. Tu bosses plus sur la méthode plutôt que sur le contenu. 
+                   <div class="acc-btn"><h3>Du XII° au XVI° siècle.</h3></div>
+                   <div class="acc-content">
+                        <div class="acc-content-inner">
+                              <p>dans le courant du XII° siècle, un chevalier lorrain revenant de la croisade passa par Bari, où étaient entreposées les reliques de Saint Nicolas. C'est ainsi qu'il exporta le culte de ce Saint dans le nord de la France (emportant quelques os au passage.).</p>
+                              <p>Au fil des siècles, le culte de Saint Nicolas évolua, jusqu'à devenir ce que connaissent aujourd'hui les habitants du nord de la France, de la Belgique et des Pays Bas: dans la nuit du 5 au 6 décembre, Saint Nicolas se rend dans les chaumières afin de demander aux enfants s'ils ont été obéissants. Ces derniers laissent alors leurs souliers devant la cheminée ou devant la porte, ainsi que sucre, du lait et une carotte pour la mule qui porte Saint Nicolas. Les enfants qui ont été sages au cours de l'année reçoivent donc des cadeaux, mais pas les enfants qui furent méchants. En effet, ces derniers reçoivent alors des coups de fouet, administrés par le Père Fouettard, un sombre ladre tout de noir vêtu.</p>
+                        </div>
+                  </div>
 
-							Par contre, en fin de course, si on a pas finalisé le projet, on lâche la méthode et on fait ce qu’on appelle un sprint. </p>
-						<h4>Peux-tu préciser à quelles technologies tu fais appel au quotidien ? </h4>
-							<p>J’utilise Sublime Text, j’ai fait le tour de tous les trucs. 
-							PHP, SASS, JAVASCRIPT, Gulp. Ajax, Jquery, Angular, Node.js, My sql, API.
+                   <div class="acc-btn"><h3>Durant le XVI° siècle</h3></div>
+                   <div class="acc-content">
+                        <div class="acc-content-inner">
+                               <p>Au XVI° siècle, la réforme protestante mit fin au culte de Saint Nicolas dans de nombreuses régions d'Europe du nord, voulant mettre un terme à ces actes de dévotion d'origine catholique. Cependant, les habitants de Pays bas, bien que protestants, décidèrent de conserver la fête de Sinter Klaas (c'est ainsi qu'est nommé Saint Nicolas en langue flamande).</p>
+                               <p>Au cours du XVII° siècle, la Saint Nicolas immigra elle aussi, accompagnant ces Hollandais venus s'installer en Amérique. Ces derniers fondèrent New Amsterdam, qui, en 1664, suite à la prise de la ville par les Anglais, fut rebaptisée New York (pour la petite anecdote, sachez que la célèbre Wall street fut nommée ainsi car c'était à cet endroit que fut érigé le premier mur d'enceinte de la ville).</p>
+                               <p>En quelques décennies, cette coutume néerlandaise de fêter la Saint Nicolas se répandit rapidement au sein des foyers des colons anglais. Sinter Klaas se transforma peu à peu en Santa Claus...</p>
+                               <p>Au fil des décennies, les familles chrétiennes trouvèrent plus approprié que cette fête des enfants soit associée à la naissance de l'enfant Jésus. Ainsi, Santa Claus commença donc à faire sa tournée non plus dans le nuit du 5 décembre, mais bien dans la nuit du 24.</p>
+                        </div>
+                  </div>
+                   <div class="acc-btn"><h3>Transformation de Santa Claus au XIX° siècle.</h3></div>
+                  <div class="acc-content">
+                         <div class="acc-content-inner">
 
-							Précision contcernant Gulp, cet outil a changé ma vie de developper. Je l’ai découvert seulement après 1 an de métier. C’est un task runner, ça permet d'automatiser les tâches de développement récurrentes
-
-							Wonderlist pour échanger avec ton web designer des listes de tâches.
-							Azana pour agenda. </p>
-						<h4>Qu’est-ce qui te plaît le plus dans ton métier et pourquoi ? </h4>
-							<p>Le travail bien fait, la maîtrise. 
-							Apprendre de nouvelles choses, relever des défis. </p>
-					</div>
-			</article>
-			<article>
-				<button onclick="show4()"><h3>Contraintes</h3></button>
-					<div id="content4"><h4>Quelles sont les personnes avec qui tu es amené à entrer en relation ?</h4>
-						<p>Web designer/gestionnaire de projets. Je n’ai pas de contacts avec les clients.</p>
-					<h4>Y a-t-il des conditions de travail spécifiques ? Des contraintes physiques ?</h4>
-						<p>Tout le temps assis. Etre présent en journée. </p>
-					<h4>Quels sont les problèmes auxquels tu peux être confronté ? </h4>
-						<p>Parfois il faut aller vite, mais pour trouver la bonne info, il faut du temps. </p>
-					</div>
-			</article>
-			<article>
-				<button onclick="show5()"><h3>Le marché de l'emploi</h3></button>
-					<div id="content5">
-						<h4>Quelles sont les évolutions possibles selon toi ?</h4>
-							<p>Infinies, ça va dans tous les sens. </p>
-						<h4>Quel est l'état du marché de l'emploi pour ce métier en général selon toi ? Dans ta zone géographique ? </h4>
-							<p>C’est la folie. Même à Charleroi, il y a plein de boîtes. Je pourrais également travailler à l’étranger. </p>
-						<h4>Existe-t-il des difficultés de recrutement dans ton métier ? </h4>
-							<p>Non.</p>
-						<h4>As-tu déjà été démarché par un recruteur ? </h4>
-							<p>Oui. Ca m’arrive régulièrement via Linkedin. </p>
-					</div>
-			</article>
-			<article>
-				<button onclick="show6()"><h3>Conseils…</h3></button>
-					<div id="content6"><h4>Y a-t-il des personnes à qui tu déconseillerais de faire ce métier ? </h4>
-						<p>Il faut l’esprit adapté (voir réponse précédente) et être persévérant. Pouvoir rester derrière un PC toute la journée. </p>
-					
-					<h4>Quels conseils me donnerais-tu ? </h4>
-						<p>La meilleure chose à faire est de trouver du boulot et se former sur le tas. </p>
-					</div>
-			</article>
-			</div>
-			<div class="tab-pane fade container" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius porro repudiandae veritatis ex consectetur odio sed esse enim explicabo maxime sunt alias eveniet laborum non dignissimos iusto minus, eligendi modi!
-			</div>
-			<div class="tab-pane fade container" id="nav-goodies" role="tabpanel" aria-labelledby="nav-goodies-tab">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolore rerum quas provident natus veniam. Quae eius accusamus illo optio, in vero delectus sit earum. Id quo amet facere, doloribus!
-			</div>
-			<div class="tab-pane fade container" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-				uech ouech
+                               <p>c'est au XIX° siècle que Santa Claus se transforma le plus. En 1821, Clement Clarke Moore, un pasteur américain, écrivit un conte de noël, y faisant apparaître le bon Santa Claus. Ce dernier prit de l'embonpoint, sa crosse se transforma en sucre d'orge, sa mitre devint un bonnet, sa mule fut remplacée par un attelage de rennes. En outre, l'auteur fit disparaître le Père Fouettard...</p>
+                               <p>Au fil des années, Santa Claus prit du poids : d'un évêque plutôt maigre à l'origine, il devint le gros bonhomme que nous connaissons aujourd'hui.</p>
+                               <p>En 1863, Santa Claus troqua ses habits d'évêque contre un costume rouge avec fourrure blanche, rehaussé d'une large ceinture de cuir (il fut représenté ainsi par Thomas Nast, illustrateur et caricaturiste au journal new-yorkais Harper's Illustrated Weekly).</p> 
+                               <p> Au cours des décennies qui suivirent, Nast dessina des centaines de Pères Noëls, "uniformisant" ainsi l'image de ce personnage dans l'inconscient collectif.</p>
+                               <div class="bibimg">
+                                    <img src="assets/img/sc1.gif">
+                              </div>
+                              <p>En 1885, Nast décida aussi que l'antre de Santa Claus se trouvait au Pôle Nord (le dessin qu'il réalisa représentait deux enfants regardant, sur une carte du monde, le tracé du parcours de Santa Claus depuis le pôle Nord jusqu'aux États-Unis.).</p>
+                              <div class="bibimg">
+                                    <img src="assets/img/sc3.gif">
+                              </div>
+                              <p>Puis, en 1886, l'écrivain américain George Webster reprit l'idée de Nast, précisant que la manufacture de jouets et la demeure du Père Noël, pendant le reste de l'année, était en fait dans les neiges du pôle Nord. </p>
+                        </div>
+                  </div>
+                  <div class="acc-btn"><h3>Finalement</h3></div>
+                  <div class="acc-content">
+                        <div class="acc-content-inner">
+                              <p> Enfin, en 1931, l'entreprise Coca Cola donna une nouvelle allure au Père Noël, sous le pinceau d'Haddon Sundblom. Santa Claus y gagna alors son air jovial et son attitude débonnaire, et troqua sa robe contre un pantalon et un tunique rouge. L'objectif de la firme était alors d'inciter les consommateurs à boire du Coca Cola en plein hiver...</p>
+                               <div class="bibimg">
+                                    <img src="assets/img/sc4.gif">
+                              </div>
+                              <p>Le Père Noël n'est donc pas une invention moderne, mais est au contraire issu d'une tradition très ancienne, remontant au III° siècle après Jésus Christ. Par contre, que l'on puisse se poser des questions sur la transformation (qui dura environ 16 siècles !) d'un évêque d'Asie mineure en un gros bonhomme rougeaud, ceci est un autre débat...</p>
+                        </div>
+                  </div>
+                  </div>
+            </div>
+      
+	<!-- PHOTOGRAPHIES -->
+		<div class="tab-contents" id="photographies">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  				<ol class="carousel-indicators">
+   					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  				</ol>
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+      					<img class="d-block w-100" class="carouimg" src="assets/img/carou4.jpg" alt="First slide">
+    				</div>
+    				<div class="carousel-item">
+      					<img class="d-block w-100" class="carouimg" src="assets/img/carou2.jpg" alt="Second slide">
+    				</div>
+    				<div class="carousel-item">
+      					<img class="d-block w-100" class="carouimg" src="assets/img/carou3.jpg" alt="Third slide">
+    				</div>
+  				</div>
+  				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
 			</div>
 		</div>
+
+	<!-- GOODIES -->
+		<div id="goodies" class="tab-contents">
+			<div class="row w-100 m-0">
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_11844672520160417163655.jpg">
+						<div class="card-body">
+						<h3>L'étrange Noël de M. Jack</h3>
+						
+              				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione expedita hic, fugit saepe ut architecto dignissim</p>
+						</div>
+						<div class="footer-card">
+							<span>1998</span>
+							<span class="red" id="prc1">7€</span>
+						</div>
+						<form name="quantity">
+       						Quantité :
+       						<!-- <button id="btn+1">+</button>
+       						<button id="btn-1">-</button> --> 
+       						<input type="text" class="quantity" id="qt1" name="qt1" value="0">
+       						<span id="tot1">0 €</span>			
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_126320131220114843.jpg">
+						<h3>Grave</h3>
+						<div class="footer-card">
+							<span>2016</span>
+							<span class="red" id="prc2">12€</span>
+						</div>
+						<form name="quantity">
+       						Quantité :
+       						<!-- <button id="btn+2">+</button>
+       						<button id="btn-2">-</button>  -->
+       						<input type="text" class="quantity" id="qt1" name="qt2" value="0">
+       						<span id="tot2">0 €</span>
+       										
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_230920131220115322.jpg">
+						<h3>Survive Style</h3>
+						<div class="footer-card">
+							<span>2004</span>
+							<span class="red">10€</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_30904672520161205190723.jpg">
+						<h3>Gran Torino</h3>
+						<div class="footer-card">
+							<span>2008</span>
+							<span class="red">10€</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_33254820141014170309.jpg">
+						<h3>Empire strike back</h3>
+						<div class="footer-card">
+							<span>1980</span>
+							<span class="red">7€</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_41274672620161121180621.jpg">
+						<h3>Grave</h3>
+						<div class="footer-card">
+							<span>2016</span>
+							<span class="red">12€</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_815420131220115902.jpg">
+						<h3>Survive Style</h3>
+						<div class="footer-card">
+							<span>2004</span>
+							<span class="red">10€</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/aff_41274672620161121180621.jpg">
+						<h3>Gran Torino</h3>
+						<div class="footer-card">
+							<span>2008</span>
+							<span class="red">10€</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-lg-12">
+						<button type="button" id="calculate">Total</button>
+						<span id="total">0 €</span>
+					</div>
+				</div>
+		</div>
+	<!-- CONTACT -->
+		<div id="contactus" class="tab-contents">
+			<form>
+				<div class="container">
+					<h2 id="contact">Contacter le Père Noel!</h2>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="text" class="form-control" placeholder="Ton Prénom">
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" class="form-control" placeholder="Ton Nom de Famille">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="text" class="form-control" placeholder="Ton adresse Email">
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" class="form-control" placeholder="Objet">
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="TON MESSAGE"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary mb-2">ENVOYER LE MESSAGE</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+		
 	</main>
 
 	<footer class="footer text-center" id="contact">
@@ -228,10 +488,12 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="assets/js/allezCine.js"></script>
-	<!-- <script src="assets/js/modal.js"></script> -->
+	<script src="assets/js/script.js"></script>
+	
+
 
 </body>
 
