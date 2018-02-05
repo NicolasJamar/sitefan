@@ -477,11 +477,11 @@
 							<span class="red" id="prc1">7€</span>
 						</div>
 						<form name="quantity">
-       						Quantité :
-       						<!-- <button id="btn+1">+</button>
-       						<button id="btn-1">-</button> --> 
-       						<input type="text" class="quantity" id="qt1" name="qt1" value="0">
-       						<span id="tot1">0 €</span>			
+       						<label for="btnPlus1">Quantité :</label>
+       						<input type="button" value="+" id="btnPlus1">
+       						<input type="button" value="-" id="btnMoins1">
+       						<input type="text" class="quantity" id="qt" name="qt1">
+       						<span id="tot1"></span>			
 						</form>
 					</div>
 				</div>
@@ -497,7 +497,7 @@
        						Quantité :
        						<!-- <button id="btn+2">+</button>
        						<button id="btn-2">-</button>  -->
-       						<input type="text" class="quantity" id="qt1" name="qt2" value="0">
+       						<input type="text" class="quantity" id="qt1" name="qt2" value="">
        						<span id="tot2">0 €</span>
        										
 						</form>
@@ -511,6 +511,14 @@
 							<span>2004</span>
 							<span class="red">10€</span>
 						</div>
+						<form name="quantity">
+       						Quantité :
+       						<!-- <button id="btn+2">+</button>
+       						<button id="btn-2">-</button>  -->
+       						<input type="text" class="quantity" id="qt1" name="qt2" value="0">
+       						<span id="tot2">0 €</span>
+       										
+						</form>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -554,48 +562,58 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
-					<div class="card">
-						<img class="card-img-top" src="assets/img/aff_41274672620161121180621.jpg">
-						<h3>Gran Torino</h3>
-						<div class="footer-card">
-							<span>2008</span>
-							<span class="red">10€</span>
-						</div>
+					<div class="card totalPrices">
+						
 					</div>
 				</div>
 			</div>
-			<div class="row">
-					<div class="col-lg-12">
-						<button type="button" id="calculate">Total</button>
-						<span id="total">0 €</span>
-					</div>
-				</div>
+			
+					
+			</div>
 		</div>
 	<!-- CONTACT -->
 		<div id="contactus" class="tab-contents">
-			<form>
+			<form class="needs-validation" novalidate>
 				<div class="container">
 					<h2 id="contact">Contacter le Père Noel!</h2>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="Ton Prénom">
+							<input type="text" class="form-control" id="validationCustom01" placeholder="Ton Prénom">
+							<div class="invalid-feedback" id="invalid1">
+        					* Indique ton prénom.
+      					</div>
 						</div>
+						
 						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="Ton Nom de Famille">
+							<input type="text" class="form-control" id="validationCustom02" placeholder="Ton Nom de Famille">
+							<div class="invalid-feedback" id="invalid2">
+        					* Indique ton nom.
+      					</div>
 						</div>
+						
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="Ton adresse Email">
+							<input type="text" class="form-control" id="validationCustom03" placeholder="Ton adresse Email">
+							<div class="invalid-feedback" id="invalid3">
+        					* Indique ton adresse e-mail.
+      					</div>
 						</div>
 						<div class="form-group col-md-6">
-							<input type="text" class="form-control" placeholder="Objet">
+							<input type="text" class="form-control" id="validationCustom04" placeholder="Objet">
+							<div class="invalid-feedback" id="invalid4">
+        					* Indique l'objet de ton message
+      					</div>
 						</div>
+						
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="TON MESSAGE"></textarea>
+						<textarea class="form-control" id="validationCustom05" rows="6" placeholder="TON MESSAGE"></textarea>
+						<div class="invalid-feedback" id="invalid5">
+        					* Ta gueule sale gosse !
+      					</div>
 					</div>
-					<button type="submit" class="btn btn-primary mb-2">ENVOYER LE MESSAGE</button>
+					<input type="submit" id="submitForm" class="btn btn-primary mb-2">
 				</div>
 			</form>
 		</div>
