@@ -15,21 +15,34 @@ html, body {
 body {
   font: 14px/1 'Open Sans', sans-serif;
   color: #000;
-  background: #841118;
+  background: #F2F2F2;
 }
 
 h1 {
   padding: 50px 0;
   font-weight: 400;
   text-align: center;
-  font-family: 'Barber Street_PersonalUseOnly.ttf';
+  font-family: 'Mountains of Christmas';
+  color:white;
+  font-size: 100px !important;
+
+
 }
 
-h3 {
+.fade.in{
+	background-image: url(assets/img/g.jpeg);
+	background-color: #F2F2F2;
+}
+
+h3{
   font:700 20px/26px 'Lato', sans-serif;
   color:#ffffff;
 }
 
+h2 {
+	color:black !important;
+	font-family: 'Mountains of Christmas';
+}
 p {
   margin: 0 0 20px;
   line-height: 1.5;
@@ -39,6 +52,9 @@ p {
 
 a{
     text-decoration: none;
+    font-family: 'Mountains of Christmas';
+    color: #3A537B;
+    font-size: 40px;
 }
 
 main {
@@ -46,14 +62,17 @@ main {
   padding: 20px 30px 30px 30px;
   margin: 0 10vw;
   background: #fff;
+  box-shadow: 1px 1px 40px #5A7193;
 }
 
 .jumbotron{
 	height: 50vh;
-	background-image: url(../img/abc.jpg);
+	background-image: url(../img/jumboimg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.jumbotron
 
 .jumbotron .container{
 	height: 100%;
@@ -70,7 +89,8 @@ main {
 .tab-contents {
   display: none;
   padding: 10px; 
-  border-top: 1px solid #831218;
+  border-top: 1px solid #697E9D;
+
 }
 
 .tab-contents.active{
@@ -121,7 +141,7 @@ ul.tabs , .tabs li {
 .tabs .active a{
   color: #555;
   border: 1px solid #ddd;
-  border-top: 2px solid #831218;
+  border-top: 1px solid #697E9D;
   border-bottom: 1px solid #fff;
 }
 
@@ -132,6 +152,14 @@ ul.tabs , .tabs li {
 
 .fade.in{
     opacity: 1;
+}
+
+.fa{
+	color: #C79D27;
+}
+
+.hide-media{
+	color: #526A8C;
 }
 
 /*PETITS ONGLETS A GAUCHE*/
@@ -145,12 +173,16 @@ ul.tabs , .tabs li {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
 	color:white;
-	background-color:#831218;
+	background-color:#355178;
+	opacity: 0.85;
 }
+
 
 .nav-pills .nav-link {
     border-radius: 0;
-    width: 166px;
+    width: 276px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 40px #5A7193;
 }
 
 .movies {
@@ -172,7 +204,8 @@ ul.tabs , .tabs li {
   margin:0 auto;
   padding:20px 25px;
   cursor:pointer;
-  background:#000;
+  background:#355178;
+  opacity: 0.75;
  
 }
 
@@ -182,6 +215,7 @@ ul.tabs , .tabs li {
   margin:0 auto;
   overflow:hidden;
   background:#000;
+  box-shadow: 1px 1px 40px #5A7193;
 }
 
 .acc-content-inner {
@@ -190,17 +224,18 @@ ul.tabs , .tabs li {
 }
 
 .acc-content {
-	background-color: #831218;
-	border-bottom: solid 1px #fff; 
-	border-top: solid 1px #fff; 
+	background-color: #F2F2F2;
+	border-bottom: solid 1px #BEC6D1; 
+	border-top: solid 1px #BEC6D1; 
+	box-shadow: 1px 1px 40px #5A7193;
 }
 
 .acc-content h3 {
-	background-color: #831218;
+	background-color: #BBCDE1;
 	border: solid 1px #fff; 
 }
 .acc-content p {
-	color: white;
+	color: black;
 }
 
 h3.selected {
@@ -232,14 +267,14 @@ h3.selected {
 
 .btn-primary{
 	color: #fff;
-    background-color: #831218;
-    border-color: #831218;
+    background-color: #50688C;
+    border-color: #50688C;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #461010;
-    border-color: #831218;
+    background-color: #37557B;
+    border-color: #50688C;
 }
 .btn:focus, .btn:hover {
     text-decoration: none;
@@ -251,7 +286,7 @@ h3.selected {
 /*NIC*/
 
 .red{
-	color: #FE4240;
+	color: #50688C;
 }
 
 .hidden{
@@ -261,8 +296,9 @@ h3.selected {
 .black-line{
 	display: block;
 	width: 100%;
-	height: 30px;
-	background-color: #000;
+	height: 48px;
+	background-color:black;
+	opacity: 0.75;
 }
 
 /*GOODIES*/
@@ -308,7 +344,7 @@ h3.selected {
 
 
 footer {
-  background-color: #000;
+  background-color: #3A3B3B;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #fff !important; 
