@@ -28,9 +28,6 @@ var quantity = $("#qt").val();
 // CALCUL PRIX
 
 // input type='button'
-
-
-
 $('#btnPlus1').click(function(){
     quantity ++;
     $('#qt').val(quantity);
@@ -44,8 +41,6 @@ $('#btnMoins1').click(function(){
     quantity ++;
 };
 });
-
-
 
 
 
@@ -124,3 +119,29 @@ $('#calculate').click(function(){
     }
 })
 ();
+
+// FORMULAIRE DE CONTACT
+$('#submitForm').click(function(){
+    var formControl = [
+    $('#validationCustom01').val(),
+    $('#validationCustom02').val(),
+    $('#validationCustom03').val(),
+    $('#validationCustom04').val(),
+    $('#validationCustom05').val(),
+    ]
+
+    var invalid = [
+    $('#invalid1'),
+    $('#invalid2'),
+    $('#invalid3'),
+    $('#invalid4'),
+    $('#invalid5'),
+    ]
+
+    for(i=0; i<formControl.length; i++){
+        if(formControl[i] === ""){
+            invalid[i].addClass('d-block');
+        }
+    }
+});
+

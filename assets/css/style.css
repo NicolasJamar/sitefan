@@ -342,6 +342,13 @@ h3.selected {
   background-color: #000;
 }
 
+/*FORMULAIRE*/
+.invalid-feedback{
+  height: 1rem;
+  width: 15rem;
+  padding-left: 5px;
+}
+
 
 footer {
   background-color: #3A3B3B;
