@@ -1,8 +1,10 @@
 var animTime = 300;
 var clickPolice = false;
 
-var price = parseFloat($("#prc1").text());
-var quantity = $("#qt1").val();
+var price = parseFloat($("#prc1").html());
+var quantityB = $('#qt').val();
+var quantity = $("#qt").val();
+
 
 // ACCORDEON
   $(document).on('touchstart click', '.acc-btn', function(){
@@ -24,8 +26,29 @@ var quantity = $("#qt1").val();
   });
 
 // CALCUL PRIX
+
+// input type='button'
+$('#btnPlus1').click(function(){
+    quantity ++;
+    $('#qt').val(quantity);
+
+});
+
+$('#btnMoins1').click(function(){
+    quantity -=1;
+    $('#qt').val(quantity);
+    if (quantity <= 0){
+    quantity ++;
+};
+});
+
+
+
 $('#calculate').click(function(){
-      alert(quantity*price);
+
+    var quantity = $("#qt1").val();
+    alert(quantity*price);
+
   });
 
 
@@ -95,11 +118,30 @@ $('#calculate').click(function(){
         })
     }
 })
+();
 
-    /*
-    JE RECUPERE le hash
-    AJOUTER LA CLASS active sur le lien href="hash"
-    RETIRER LA CLASS active sur les autres onglets
-    AFFICHER / Masquer les contenus
-    */
-  ();
+// FORMULAIRE DE CONTACT
+$('#submitForm').click(function(){
+    var formControl = [
+    $('#validationCustom01').val(),
+    $('#validationCustom02').val(),
+    $('#validationCustom03').val(),
+    $('#validationCustom04').val(),
+    $('#validationCustom05').val(),
+    ]
+
+    var invalid = [
+    $('#invalid1'),
+    $('#invalid2'),
+    $('#invalid3'),
+    $('#invalid4'),
+    $('#invalid5'),
+    ]
+
+    for(i=0; i<formControl.length; i++){
+        if(formControl[i] === ""){
+            invalid[i].addClass('d-block');
+        }
+    }
+});
+

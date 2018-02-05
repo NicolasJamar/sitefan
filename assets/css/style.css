@@ -366,6 +366,22 @@ h3.selected {
 	width: 30px;
 }
 
+#goodies .totalPrices{
+ /* position: absolute;
+  top: 200px;
+  right: 25px;
+  width: 20vw;
+  height: 50vh;*/
+  background-color: #000;
+}
+
+/*FORMULAIRE*/
+.invalid-feedback{
+  height: 1rem;
+  width: 15rem;
+  padding-left: 5px;
+}
+
 
 footer {
   background-color: #3A3B3B;
