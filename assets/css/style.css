@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 *, *:before, *:after {
@@ -16,58 +15,6 @@ body {
   background: #F2F2F2;
 }
 
-h1 {
-  padding: 50px 0;
-  font-weight: 400;
-  text-align: center;
-  font-family: 'Mountains of Christmas';
-  color:white;
-  font-size: 100px !important;
-
-
-}
-
-.tel{
-	display: block;
-	font-family: 'Abril Fatface', 'Lato', sans-serif;
-  	color:white;
-  	font-size: 20px;
-  	padding: 13px 0 13px 20px;
-}
-
-.fade.in{
-	background-image: url(assets/img/g.jpeg);
-	background-color: #F2F2F2;
-}
-
-h3{
-  font:700 20px/26px 'Lato', sans-serif;
-  color:#ffffff;
-}
-
-h2 {
-	color:black !important;
-	font-family: 'Mountains of Christmas';
-}
-p {
-  margin: 0 0 20px;
-  line-height: 1.5;
-  font-size: 20px;
-  color:#848795;
-  font-family: 'Abril Fatface', 'Lato', sans-serif;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Mountains of Christmas';
-    color: #3A537B;
-    font-size: 40px;
-}
-
-.titre{
-	color:#C79D27;
-	font-size: 150px;
-}
 main {
   min-width: 320px;
   padding: 20px 30px 30px 30px;
@@ -76,6 +23,50 @@ main {
   box-shadow: 1px 1px 40px #5A7193;
 }
 
+h1, h2, h3, h4, h5{
+   font-family: 'Mountains of Christmas';
+} 
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-weight: 400;
+  text-align: center; 
+  color:white;
+  font-size: 4rem;
+}
+
+.titre{
+  color:#C79D27;
+  font-size: 7rem;
+}
+
+h3, h2{
+  color: #526A8C;
+  font-size: 30px;
+  text-align: center;
+} 
+
+h4{
+  font-size: 30px;
+  color: #C79D27;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: justify;
+  color:#848795;
+  font-family: 'Abril Fatface', 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*JUMBOTRON*/
 .jumbotron{
 	height: 50vh;
 	background-image: url(../img/jumboimg.jpg);
@@ -83,12 +74,8 @@ main {
 	background-repeat: no-repeat;
 }
 
-.jumbotron
 
-.jumbotron .container{
-	height: 100%;
-}
-
+/*BLOC PRINCIPAL*/
 .tabs-content{
     position: relative; 
     z-index: 3; 
@@ -110,13 +97,6 @@ main {
 
 
 /*ONGLETS*/
-
-@media screen and (max-width: 650px) {
-  .hide-media {
-  display: none;
-	}
-}
-
 ul.tabs , .tabs li {
     margin: 0;
     padding: 0;
@@ -135,6 +115,9 @@ ul.tabs , .tabs li {
 }
 
 .tabs a{
+    font-family: 'Mountains of Christmas';
+    color: #3A537B;
+    font-size: 1.5rem;
   	padding: 15px 25px;
   	font-weight: 600;
   	text-align: center;
@@ -163,8 +146,20 @@ ul.tabs , .tabs li {
 
 .fade.in{
     opacity: 1;
+      background-image: url(assets/img/g.jpeg);
+  background-color: #F2F2F2;
 }
 
+.tel{
+  display: block;
+  font-family: 'Abril Fatface', 'Lato', sans-serif;
+  color:white;
+  font-size: 20px;
+  padding: 13px 0 13px 20px;
+}
+
+
+/*fontawesome*/
 .fa{
 	color: #C79D27;
 }
@@ -174,13 +169,6 @@ ul.tabs , .tabs li {
 }
 
 /*PETITS ONGLETS A GAUCHE*/
-.nav-link {
-	color:black;
-}
-
-.nav-link:hover {
-	color:black;
-}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
 	color:white;
@@ -188,17 +176,14 @@ ul.tabs , .tabs li {
 	opacity: 0.85;
 }
 
-
 .nav-pills .nav-link {
-    border-radius: 0;
-    width: 276px;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 40px #5A7193;
-}
-
-.movies {
-	display: flex;
-	justify-content: space-around;
+  font-family: 'Mountains of Christmas';
+  color: #3A537B;
+  font-size: 1.5rem;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 40px #5A7193;
 }
 
 iframe{
@@ -206,20 +191,31 @@ iframe{
 	height: auto;
 }
 
+
+/*PRESENTATION*/
+.movies h4{
+  float: left;
+}
+
 .date_titre{
 	font-family:'Mountains of Christmas';
 	font-size: 30px;
 	color: #C79D27;
+  padding-left: 8rem;
+}
+
+.movies img{
+  height: 35vh !important;
+  margin: 0 auto;
+  display: block;
 }
 
 /*ACCORDEON*/
-
 .acc-container {
   width:90%;
   margin:30px auto 0 auto;
   overflow:hidden;
 }
-
 
 .acc-btn { 
   width:100%;
@@ -262,16 +258,8 @@ iframe{
 
 h3.selected {
 	color: #3A3B3B;
-	font-family: 'Mountains of Christmas';
-	font-size: 30px;
-}
 
- h3, h2{
-	color: #526A8C;
-	font-family: 'Mountains of Christmas';
-	font-size: 30px;
-	text-align: center;
-} 
+}
 
 .open {
   height: auto;
@@ -282,15 +270,9 @@ h3.selected {
 	justify-content: center;
 }
 
-
-.iconfilm{
-	width: 150px;
-	height: auto;
-}
-
  .carouimg{
  	height: 916px !important;
- }
+}
 
  .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
@@ -338,7 +320,7 @@ h3.selected {
 }
 
 #goodies .card{
-    height: 100%;
+  height: 100%;
 	background-color: #E9E9EA;
 	border-bottom: 2px solid #C6C6C6;
 }
@@ -388,10 +370,22 @@ footer {
   color: #fff !important; 
 }
 footer a {
-    line-height: 30px !important;
-    border-radius: 100% !important; }
+  line-height: 30px !important;
+  border-radius: 100% !important; }
 
 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 650px) {
+  .hide-media {
+  display: none;
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
 
+  .titre{
+    font-size: 5rem;
+  }
 
-
+}
