@@ -7,8 +7,8 @@
 }
 
 html, body {
-  max-height: 100vh;
-  max-width: 100vw;
+ /* height: 100%;
+  width: 100%;*/
 }
 
 body {
@@ -60,11 +60,15 @@ p {
   font-size: 1rem;
   text-align: justify;
   color:#848795;
-  font-family: 'Abril Fatface', 'Lato', sans-serif;
+  font-family: 'Abril Fatface', sans-serif;
 }
 
 a{
     text-decoration: none;
+}
+
+.blue{
+  color: #50688C;
 }
 
 /*JUMBOTRON*/
@@ -73,6 +77,24 @@ a{
 	background-image: url(../img/jumboimg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+/*BLACK DIV*/
+.black-line{
+  display: block;
+  width: 100%;
+  height: 48px;
+  background-color:black;
+  opacity: 0.75;
+  vertical-align: center;
+}
+
+.tel{
+  display: block;
+  font-family: 'Abril Fatface', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  padding: 9px 0 0 20px;
 }
 
 
@@ -146,19 +168,9 @@ ul.tabs , .tabs li {
 }
 
 .fade.in{
-    opacity: 1;
-      background-image: url(assets/img/g.jpeg);
+  opacity: 1;
   background-color: #F2F2F2;
 }
-
-.tel{
-  display: block;
-  font-family: 'Abril Fatface', 'Lato', sans-serif;
-  color:white;
-  font-size: 20px;
-  padding: 13px 0 13px 20px;
-}
-
 
 /*fontawesome*/
 .fa{
@@ -187,15 +199,11 @@ ul.tabs , .tabs li {
   box-shadow: 1px 1px 40px #5A7193;
 }
 
-iframe{
-	width: 100%;
-	height: auto;
-}
-
 
 /*PRESENTATION*/
 .movies h4{
   float: left;
+  margin-top: 0.5rem;
 }
 
 .date_titre{
@@ -203,6 +211,7 @@ iframe{
 	font-size: 30px;
 	color: #C79D27;
   float: right;
+  margin-top: 0.5rem;
 }
 
 .movies p{
@@ -210,9 +219,15 @@ iframe{
 }
 
 .movies img{
-  height: 35vh !important;
-  margin: 0 auto;
+  width: 15vw !important;
+  margin: 0.5rem auto;
   display: block;
+}
+
+iframe{
+  width: 100%;
+  height: 38vh;
+  margin: 0.5rem auto;
 }
 
 /*ACCORDEON*/
@@ -273,6 +288,7 @@ h3.selected {
 .bibimg{
 	display: flex;
 	justify-content: center;
+  height: 65vh;
 }
 
  .carouimg{
@@ -303,21 +319,7 @@ h3.selected {
 
 /*NIC*/
 
-.red{
-	color: #50688C;
-}
 
-.hidden{
-	display: none;
-}
-
-.black-line{
-	display: block;
-	width: 100%;
-	height: 48px;
-	background-color:black;
-	opacity: 0.75;
-}
 
 /*GOODIES*/
 #goodies .vignettes{
@@ -377,6 +379,12 @@ footer {
 footer a {
   line-height: 30px !important;
   border-radius: 100% !important; }
+
+.list-inline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 
 /*MEDIA QUERIES*/

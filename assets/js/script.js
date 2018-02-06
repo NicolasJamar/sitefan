@@ -1,64 +1,15 @@
-var animTime = 300;
-var clickPolice = false;
+// ACCORDEON
+var animTime = 300;  
+var clickPolice = false; 
 
+//GOODIES
 var price = parseFloat($("#prc1").html());
 var quantityB = $('#qt').val();
 var quantity = $("#qt").val();
 
 
-// ACCORDEON
-  $(document).on('touchstart click', '.acc-btn', function(){
-    if(!clickPolice){
-       clickPolice = true;
-      
-      var currIndex = $(this).index('.acc-btn'),
-          targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
-   
-      $('.acc-btn h3').removeClass('selected');
-      $(this).find('h3').addClass('selected');
-      
-      $('.acc-content').stop().animate({ height: 0 }, animTime);
-      $('.acc-content').eq(currIndex).stop().animate({ height: targetHeight }, animTime);
-
-      setTimeout(function(){ clickPolice = false; }, animTime);
-    }
-    
-  });
-
-// CALCUL PRIX
-
-// input type='button'
-$('#btnPlus1').click(function(){
-    quantity ++;
-    $('#qt').val(quantity);
-
-});
-
-$('#btnMoins1').click(function(){
-    quantity -=1;
-   
-    if (quantity < 0){
-    alert("Vous ne pouvez pas commander moins que 0 !")    
-    quantity ++;
-    };
-    
-     $('#qt').val(quantity);
-});
-
-
-
-$('#calculate').click(function(){
-
-    var quantity = $("#qt1").val();
-    alert(quantity*price);
-
-  });
-
-
-
 // ONGLETS
 (function onglets() {
-
     /*
     LORSQUE l'on clique sur un onglet
         * ON RETIRE la class active de l'onglet actif
@@ -122,6 +73,57 @@ $('#calculate').click(function(){
     }
 })
 ();
+
+
+// ACCORDEON
+  $(document).on('touchstart click', '.acc-btn', function(){
+    if(!clickPolice){
+       clickPolice = true;
+      
+      var currIndex = $(this).index('.acc-btn'),
+          targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
+   
+      $('.acc-btn h3').removeClass('selected');
+      $(this).find('h3').addClass('selected');
+      
+      $('.acc-content').stop().animate({ height: 0 }, animTime);
+      $('.acc-content').eq(currIndex).stop().animate({ height: targetHeight }, animTime);
+
+      setTimeout(function(){ clickPolice = false; }, animTime);
+    }
+    
+  });
+
+
+// GOODIES : CALCUL PRIX
+// input type='button'
+
+    //Bouton Plus
+$('#btnPlus1').click(function(){
+    quantity ++;
+    $('#qt').val(quantity);
+
+});
+
+    //Bouton Moins
+$('#btnMoins1').click(function(){
+    quantity -=1;
+   
+    if (quantity < 0){
+    alert("Vous ne pouvez pas commander moins que 0 !")    
+    quantity ++;
+    };
+    
+     $('#qt').val(quantity);
+});
+
+$('#calculate').click(function(){
+
+    var quantity = $("#qt1").val();
+    alert(quantity*price);
+
+  });
+
 
 // FORMULAIRE DE CONTACT
 $('#submitForm').click(function(){
