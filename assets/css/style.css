@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 *, *:before, *:after {
@@ -9,126 +7,233 @@
 }
 
 html, body {
-  height: 100vh;
+ /* height: 100%;
+  width: 100%;*/
 }
 
 body {
-  font: 14px/1 'Open Sans', sans-serif;
   color: #000;
-  background: #ff0000;
+  background: #F2F2F2;
 }
 
+main {
+  min-width: 320px;
+  padding: 20px 30px 30px 30px;
+  margin: 0 10vw;
+  background: #fff;
+  box-shadow: 1px 1px 40px #5A7193;
+}
+
+h1, h2, h3, h4, h5{
+   font-family: 'Mountains of Christmas';
+} 
+
 h1 {
-  padding: 50px 0;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
   font-weight: 400;
+  text-align: center; 
+  color:white;
+  font-size: 4rem;
+}
+
+.titre{
+  color:#C79D27;
+  font-size: 7rem;
+}
+
+h3, h2{
+  color: #526A8C;
+  font-size: 30px;
   text-align: center;
+} 
+
+h4{
+  font-size: 30px;
+  color: #C79D27;
 }
 
 p {
   margin: 0 0 20px;
   line-height: 1.5;
+  font-size: 1rem;
+  text-align: justify;
+  color:#848795;
+  font-family: 'Abril Fatface', sans-serif;
 }
 
-main {
-  min-width: 320px;
-  padding: 20px 50px 50px 50px;
-  margin: 0 10vw;
-  background: #fff;
+a{
+    text-decoration: none;
 }
 
-section {
+.blue{
+  color: #50688C;
+}
+
+/*JUMBOTRON*/
+.jumbotron{
+	height: 50vh;
+	background-image: url(../img/jumboimg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*BLACK DIV*/
+.black-line{
+  display: block;
+  width: 100%;
+  height: 48px;
+  background-color:black;
+  opacity: 0.75;
+  vertical-align: center;
+}
+
+.tel{
+  display: block;
+  font-family: 'Abril Fatface', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  padding: 9px 0 0 20px;
+}
+
+
+/*BLOC PRINCIPAL*/
+.tabs-content{
+    position: relative; 
+    z-index: 3; 
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 20px;
+}
+
+.tab-contents {
   display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  padding: 10px; 
+  border-top: 1px solid #697E9D;
+
 }
 
-input {
-  display: none;
+.tab-contents.active{
+    display: block;
 }
 
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
+
+/*ONGLETS*/
+ul.tabs , .tabs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-label:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 10px;
+.tabs li{
+    float:left; 
+    display: block;
 }
 
-label[for*='1']:before {
-  content: '\f1cb';
+.tabs:after{
+    display: table;
+    content: ' ';
+    clear: both; 
 }
 
-label[for*='2']:before {
-  content: '\f17d';
+.tabs a{
+    font-family: 'Mountains of Christmas';
+    color: #3A537B;
+    font-size: 1.5rem;
+  	padding: 15px 25px;
+  	font-weight: 600;
+  	text-align: center;
+  	color: #bbb;
+  	border: 1px solid transparent;
+    display: inline-block;
+    background-color: #fff;
 }
 
-label[for*='3']:before {
-  content: '\f16b';
+.tabs a:hover{
+	text-decoration: none;
+	color: #555;
 }
 
-label[for*='4']:before {
-  content: '\f1a9';
-}
-
-label[for*='5']:before {
-  content: '\f1a9';
-}
-
-label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-input:checked + label {
+.tabs .active a{
   color: #555;
   border: 1px solid #ddd;
-  border-top: 2px solid red;
+  border-top: 1px solid #697E9D;
   border-bottom: 1px solid #fff;
 }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5
- {
+.fade{
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.fade.in{
+  opacity: 1;
+  background-color: #F2F2F2;
+}
+
+/*fontawesome*/
+.fa{
+	color: #C79D27;
+}
+
+.hide-media{
+	color: #526A8C;
+}
+
+/*PETITS ONGLETS A GAUCHE*/
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	color:white;
+	background-color:#355178;
+	opacity: 0.85;
+}
+
+.nav-pills .nav-link {
+  font-family: 'Mountains of Christmas';
+  color: #3A537B;
+  font-size: 1.5rem;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 40px #5A7193;
+}
+
+
+/*PRESENTATION*/
+.movies h4{
+  float: left;
+  margin-top: 0.5rem;
+}
+
+.date_titre{
+	font-family:'Mountains of Christmas';
+	font-size: 30px;
+	color: #C79D27;
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.movies p{
+  clear: both;
+}
+
+.movies img{
+  width: 15vw !important;
+  margin: 0.5rem auto;
   display: block;
 }
 
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
-  }
-
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
+iframe{
+  width: 100%;
+  height: 38vh;
+  margin: 0.5rem auto;
 }
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
-  }
-}
-
 
 /*ACCORDEON*/
-
 .acc-container {
   width:90%;
   margin:30px auto 0 auto;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  -o-border-radius:8px;
-  border-radius:8px;
   overflow:hidden;
 }
 
@@ -137,8 +242,9 @@ input:checked + label {
   margin:0 auto;
   padding:20px 25px;
   cursor:pointer;
-  background:#34495E;
-  border-bottom:1px solid #2C3E50;
+  background:#C79D27;
+  opacity: 0.75;
+ 
 }
 
 .acc-content {
@@ -146,11 +252,33 @@ input:checked + label {
   width:100%;
   margin:0 auto;
   overflow:hidden;
-  background:#2C3E50;
+  background:#000;
+  box-shadow: 1px 1px 40px #5A7193;
 }
 
 .acc-content-inner {
   padding:30px;
+
+}
+
+.acc-content {
+	background-color: #F2F2F2;
+	border-bottom: solid 1px #C79D27; 
+	border-top: solid 1px #C79D27; 
+	box-shadow: 1px 1px 40px #5A7193;
+}
+
+.acc-content h3 {
+	background-color: #BBCDE1;
+	border: solid 1px #fff; 
+}
+.acc-content p {
+	color: #3C3C3C;
+}
+
+h3.selected {
+	color: #3A3B3B;
+
 }
 
 .open {
@@ -160,71 +288,117 @@ input:checked + label {
 .bibimg{
 	display: flex;
 	justify-content: center;
+  height: 65vh;
 }
 
-h3 {
-  font:700 20px/26px 'Lato', sans-serif;
-  color:#ffffff;
+ .carouimg{
+ 	height: 916px !important;
 }
 
-p { 
-  font:400 16px/24px 'Lato', sans-serif;
-  color:#798795;
+ .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
 }
 
-.selected {
-  color:#1ABC9C;
+.btn-primary{
+	color: #fff;
+    background-color: #50688C;
+    border-color: #50688C;
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #37557B;
+    border-color: #50688C;
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem !important;
+}
 
 /*NIC*/
 
-.red{
-	color: #FE4240;
+
+
+/*GOODIES*/
+#goodies .vignettes{
+	margin-bottom: 1rem;
 }
 
-.hidden{
-	display: none;
+#goodies .card{
+  height: 100%;
+	background-color: #E9E9EA;
+	border-bottom: 2px solid #C6C6C6;
 }
 
-.jumbotron{
-	height: 50vh;
-	background-image: url(../img/abc.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+#goodies img{
+	border-radius: 0;
+	margin: 0 auto 0.3rem;
+	height: 35vh !important;
 }
 
-.jumbotron .container{
-	height: 100%;
+#goodies .footer-card{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.5rem;
 }
 
-.jumbotron h1{
-
+#goodies form{
+	/*width: 40px;*/
+	/*height: 40px;*/
 }
 
-.black-line{
-	display: block;
-	width: 100%;
-	height: 30px;
-	background-color: #000;
+#goodies input{
+	width: 30px;
 }
 
-.positionfixed{
-	position: sticky;
-	top: 400px;
+#goodies .totalPrices{
+ /* position: absolute;
+  top: 200px;
+  right: 25px;
+  width: 20vw;
+  height: 50vh;*/
+  background-color: #000;
 }
+
+/*FORMULAIRE*/
+.invalid-feedback{
+  height: 1rem;
+  width: 15rem;
+  padding-left: 5px;
+}
+
 
 footer {
-  background-color: #000;
+  background-color: #3A3B3B;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #fff !important; 
 }
 footer a {
-    line-height: 30px !important;
-    border-radius: 100% !important; }
+  line-height: 30px !important;
+  border-radius: 100% !important; }
+
+.list-inline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 650px) {
+  .hide-media {
+  display: none;
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
 
+  .titre{
+    font-size: 5rem;
+  }
 
-
+}
