@@ -36,10 +36,13 @@ $('#btnPlus1').click(function(){
 
 $('#btnMoins1').click(function(){
     quantity -=1;
-    $('#qt').val(quantity);
-    if (quantity <= 0){
+   
+    if (quantity < 0){
+    alert("Vous ne pouvez pas commander moins que 0 !")    
     quantity ++;
-};
+    };
+    
+     $('#qt').val(quantity);
 });
 
 
