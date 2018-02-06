@@ -142,8 +142,11 @@ $('#submitForm').click(function(){
     ]
 
     for(i=0; i<formControl.length; i++){
+
         if(formControl[i] === ""){
             invalid[i].addClass('d-block');
+        }else if (formControl[i] !== ""){
+            invalid[i].removeClass('d-block');
         }
     }
 });
