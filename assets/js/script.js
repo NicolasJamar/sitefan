@@ -3,9 +3,7 @@ var animTime = 300;
 var clickPolice = false; 
 
 //GOODIES
-var price = parseFloat($("#prc1").html());
-var quantityB = $('#qt').val();
-var quantity = $("#qt").val();
+
 
 
 // ONGLETS
@@ -96,25 +94,37 @@ var quantity = $("#qt").val();
 
 
 // GOODIES : CALCUL PRIX
-// input type='button'
+var price = parseFloat($("#prc1").html());
+var quantityB = $('#qt').val();
+var quantity = [
+    $("#qt1").val(),
+    $("#qt2").val()
+];
+var btn = [
+    $("#btnPlus1"),
+    $("#btnPlus2")
+];
 
+    // input type='button'
     //Bouton Plus
-$('.btnPlus').click(function(){
-    quantity ++;
-    $('#qt').val(quantity);
+btn[0].click(function(){
 
+    for(i=0; i < quantity.length; i++){
+    quantity[i] ++;
+    $('#qt1').val(quantity[i]); 
+};
 });
 
     //Bouton Moins
-$('.btnMoins').click(function(){
-    quantity -=1;
+$('#btnMoins1').click(function(){
+    quantity[i] -=1;
    
-    if (quantity < 0){
+    if (quantity[i] < 0){
     alert("Vous ne pouvez pas commander moins que 0 !")    
-    quantity ++;
+    quantity[i] ++;
     };
     
-     $('#qt').val(quantity);
+     $('#qt1').val(quantity[i]);
 });
 
 // $('#calculate').click(function(){
