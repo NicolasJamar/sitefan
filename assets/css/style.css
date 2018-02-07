@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+/*html, body {
   height: 100%;
   width: 100%;
-}
+}*/
 
 body {
   color: #000;
@@ -367,6 +367,17 @@ h3.selected {
   height: 1rem;
   width: 15rem;
   padding-left: 5px;
+}
+
+/*ANCHOR LINK*/
+.anchorLink {
+  font-size: 2rem;
+}
+
+.fa-chevron-up:hover{
+  color: #5A7193 !important;
+  font-size: 2.1rem;
+  transition: 0.4s;
 }
 
 
