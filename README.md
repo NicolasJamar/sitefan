@@ -10,4 +10,4 @@ Partie B. du projet FrontEnd-AllezCine
 
 Instructions :
 
-[Partie B. du projet FrontEnd-AllezCine] (https://github.com/becodeorg/Swartz-promo-3/tree/master/Projects/FrontEnd-AllezCine "les instructions")
+[Partie B. du projet FrontEnd-AllezCine](https://github.com/becodeorg/Swartz-promo-3/tree/master/Projects/FrontEnd-AllezCine "les instructions")
