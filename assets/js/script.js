@@ -130,12 +130,14 @@ $('#panier7').click(function(){
     $('#tot7').html(price7 + " €");
 });
 
-console.log(price4);
 
     //Modal : Total des achats
 $('#btnModalG').click(function(){
     $('#modalGoodies').addClass('d-block');
-
+        //find all images inside #goodies, make a copy and convert to an array;
+    var goodiesImages = $('#goodies').find('img').clone().toArray();
+    
+    // Take all the SubTotals in an array;
     var goodiesSousTot = [
     parseFloat($('#tot1').html()),
     parseFloat($('#tot2').html()),
@@ -146,13 +148,13 @@ $('#btnModalG').click(function(){
     parseFloat($('#tot7').html()),
     ];
 
-    console.log(goodiesSousTot[0]); //BON !
-
+    //put all the subTotals in the modal "Total des achats";
     goodiesSousTot.forEach(function(prix, i){  
         if (goodiesSousTot[i] > 0){
-            console.log("coucou");
+           
+            $('.modal-body').prepend(goodiesImages[i]);  
         }
-    })
+    })  
 
 });
 
