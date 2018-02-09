@@ -93,46 +93,39 @@ var clickPolice = false;
   });
 
 
-// GOODIES : CALCUL PRIX
+// GOODIES : CALCUL SOUS-TOTAUX
     // input type='button'
 $('#panier1').click(function(){
-
     var price1 = parseFloat($("#qt1").val() * parseFloat($('#price1').html())).toFixed(2);
-    $('#tot1').html(price1);
+    $('#tot1').html(price1 + " €");
 });
 
 $('#panier2').click(function(){
-
     var price2 = parseFloat($("#qt2").val() * parseFloat($('#price2').html())).toFixed(2);
     $('#tot2').html(price2 + " €");
 });
 
 $('#panier3').click(function(){
-
     var price3 = parseFloat($("#qt3").val() * parseFloat($('#price3').html())).toFixed(2);
     $('#tot3').html(price3 + " €");
 });
 
 $('#panier4').click(function(){
-
     var price4 = parseFloat($("#qt4").val() * parseFloat($('#price4').html())).toFixed(2);
     $('#tot4').html(price4 + " €");
 });
 
 $('#panier5').click(function(){
-
     var price5 = parseFloat($("#qt5").val() * parseFloat($('#price5').html())).toFixed(2);
     $('#tot5').html(price5 + " €");
 });
 
 $('#panier6').click(function(){
-
     var price6 = parseFloat($("#qt6").val() * parseFloat($('#price6').html())).toFixed(2);
     $('#tot6').html(price6 + " €");
 });
 
 $('#panier7').click(function(){
-
     var price7 = parseFloat($("#qt7").val() * parseFloat($('#price7').html())).toFixed(2);
     $('#tot7').html(price7 + " €");
 });
@@ -140,7 +133,32 @@ $('#panier7').click(function(){
 console.log(price4);
 
     //Modal : Total des achats
+$('#btnModalG').click(function(){
+    $('#modalGoodies').addClass('d-block');
 
+    var goodiesSousTot = [
+    parseFloat($('#tot1').html()),
+    parseFloat($('#tot2').html()),
+    parseFloat($('#tot3').html()),
+    parseFloat($('#tot4').html()),
+    parseFloat($('#tot5').html()),
+    parseFloat($('#tot6').html()),
+    parseFloat($('#tot7').html()),
+    ];
+
+    console.log(goodiesSousTot[0]); //BON !
+
+    goodiesSousTot.forEach(function(prix, i){  
+        if (goodiesSousTot[i] > 0){
+            console.log("coucou");
+        }
+    })
+
+});
+
+$('.close').click(function(){
+    $('#modalGoodies').removeClass('d-block');
+});
 
 
 
