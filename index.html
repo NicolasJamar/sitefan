@@ -427,15 +427,17 @@
 								</div>
 								<div class="footer-card">
 									<span>1998</span>
-									<span class="blue" id="prc1">7€</span>
+									<span class="blue" id="prc1">7.65€</span>
 								</div>
 								<form name="quantity">
 									<label>Quantité :</label>
-									<input type="button" value="+" id="btnPlus1">
-									<input type="button" value="-" id="btnMoins2">
-									<input type="text" class="quantity" id="qt1" name="qt1">
-									<span id="tot1"></span>	
+									<input type="number" min="0" id="qt1">
+									<input type="button" value="panier" id="btnPlus1">
+									<!-- <input type="button" value="-" id="btnMoins2"> -->
+									<!-- <input type="text" class="quantity" id="qt1" name="qt1"> -->
+										
 								</form>
+								<span id="tot1">0</span>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -448,9 +450,10 @@
 								</div>
 								<form name="quantity">
 									<label>Quantité :</label>
-									<input type="button" value="+" id="btnPlus2">
-									<input type="button" value="-" id="btnMoins2">
-									<input type="text" class="quantity" id="qt2" name="qt2">
+									<input type="number" min="0" id="qt2">
+									<input type="button" value="panier" id="btnPlus2">
+									<!-- <input type="button" value="-" id="btnMoins2"> -->
+									<input type="text" class="quantity" id="qt2" name="qt2"> -->
 									<span id="tot2"></span>	
 								</form>
        					</div>

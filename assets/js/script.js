@@ -95,11 +95,8 @@ var clickPolice = false;
 
 // GOODIES : CALCUL PRIX
 var price = parseFloat($("#prc1").html());
-var quantityB = $('#qt').val();
-var quantity = [
-    $("#qt1").val(),
-    $("#qt2").val()
-];
+// var quantityB = $('#qt').val();
+
 var btn = [
     $("#btnPlus1"),
     $("#btnPlus2")
@@ -108,24 +105,27 @@ var btn = [
     // input type='button'
     //Bouton Plus
 btn[0].click(function(){
+var quantity = [
+    $("#qt1").val(),
+    $("#qt2").val()
+];
 
-    for(i=0; i < quantity.length; i++){
-    quantity[i] ++;
-    $('#qt1').val(quantity[i]); 
-};
+    var price1 = parseFloat(quantity[0] * parseFloat($('#prc1').html())).toFixed(2);
+    console.log(price1);
+    $('#tot1').html(price1);
 });
 
     //Bouton Moins
-$('#btnMoins1').click(function(){
-    quantity[i] -=1;
+// $('#btnMoins1').click(function(){
+//     quantity[i] -=1;
    
-    if (quantity[i] < 0){
-    alert("Vous ne pouvez pas commander moins que 0 !")    
-    quantity[i] ++;
-    };
+//     if (quantity[i] < 0){
+//     alert("Vous ne pouvez pas commander moins que 0 !")    
+//     quantity[i] ++;
+//     };
     
-     $('#qt1').val(quantity[i]);
-});
+//      $('#qt1').val(quantity[i]);
+// });
 
 // $('#calculate').click(function(){
 
