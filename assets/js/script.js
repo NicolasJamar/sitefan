@@ -104,58 +104,45 @@ $('#panier1').click(function(){
 $('#panier2').click(function(){
 
     var price2 = parseFloat($("#qt2").val() * parseFloat($('#price2').html())).toFixed(2);
-    $('#tot2').html(price2);
+    $('#tot2').html(price2 + " €");
 });
 
 $('#panier3').click(function(){
 
     var price3 = parseFloat($("#qt3").val() * parseFloat($('#price3').html())).toFixed(2);
-    $('#tot3').html(price3);
+    $('#tot3').html(price3 + " €");
 });
 
 $('#panier4').click(function(){
 
     var price4 = parseFloat($("#qt4").val() * parseFloat($('#price4').html())).toFixed(2);
-    $('#tot4').html(price4);
+    $('#tot4').html(price4 + " €");
 });
 
 $('#panier5').click(function(){
 
     var price5 = parseFloat($("#qt5").val() * parseFloat($('#price5').html())).toFixed(2);
-    $('#tot5').html(price5);
+    $('#tot5').html(price5 + " €");
 });
 
 $('#panier6').click(function(){
 
     var price6 = parseFloat($("#qt6").val() * parseFloat($('#price6').html())).toFixed(2);
-    $('#tot6').html(price6);
+    $('#tot6').html(price6 + " €");
 });
 
 $('#panier7').click(function(){
 
     var price7 = parseFloat($("#qt7").val() * parseFloat($('#price7').html())).toFixed(2);
-    $('#tot7').html(price7);
+    $('#tot7').html(price7 + " €");
 });
 
+console.log(price4);
 
-    //Bouton Moins
-// $('#btnMoins1').click(function(){
-//     quantity[i] -=1;
-   
-//     if (quantity[i] < 0){
-//     alert("Vous ne pouvez pas commander moins que 0 !")    
-//     quantity[i] ++;
-//     };
-    
-//      $('#qt1').val(quantity[i]);
-// });
+    //Modal : Total des achats
 
-// $('#calculate').click(function(){
 
-//     var quantity = $("#qt1").val();
-//     alert(quantity*price);
 
-//   });
 
 
 // FORMULAIRE DE CONTACT
