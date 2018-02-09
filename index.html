@@ -427,15 +427,12 @@
 								</div>
 								<div class="footer-card">
 									<span>1998</span>
-									<span class="blue" id="prc1">7.65€</span>
+									<span class="blue" id="price1">7.65€</span>
 								</div>
 								<form name="quantity">
 									<label>Quantité :</label>
-									<input type="number" min="0" id="qt1">
-									<input type="button" value="panier" id="btnPlus1">
-									<!-- <input type="button" value="-" id="btnMoins2"> -->
-									<!-- <input type="text" class="quantity" id="qt1" name="qt1"> -->
-										
+									<input type="number" min="0" max="50" id="qt1">
+									<input type="button" value="panier" id="panier1">
 								</form>
 								<span id="tot1">0</span>
 							</div>
@@ -446,16 +443,14 @@
 								<h3>Grave</h3>
 								<div class="footer-card">
 									<span>2016</span>
-									<span class="blue" id="prc2">12€</span>
+									<span class="blue" id="price2">12€</span>
 								</div>
 								<form name="quantity">
 									<label>Quantité :</label>
-									<input type="number" min="0" id="qt2">
-									<input type="button" value="panier" id="btnPlus2">
-									<!-- <input type="button" value="-" id="btnMoins2"> -->
-									<input type="text" class="quantity" id="qt2" name="qt2"> -->
-									<span id="tot2"></span>	
+									<input type="number" min="0" max="50" id="qt2">
+									<input type="button" value="panier" id="panier2">
 								</form>
+								<span id="tot2"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -464,16 +459,14 @@
        						<h3>Survive Style</h3>
        						<div class="footer-card">
        							<span>2004</span>
-       							<span class="blue">10€</span>
+       							<span class="blue" id="price3">10€</span>
        						</div>
        						<form name="quantity">
-       							Quantité :
-       						<!-- <button id="btn+2">+</button>
-       							<button id="btn-2">-</button>  -->
-       							<input type="text" class="quantity" id="qt3" name="qt3" value="0">
-       							<span id="tot3">0 €</span>
-
-       						</form>
+									<label>Quantité :</label>
+									<input type="number" min="0" max="50" id="qt3">
+									<input type="button" value="panier" id="panier3">
+								</form>
+							<span id="tot3"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -482,8 +475,14 @@
        						<h3>Gran Torino</h3>
        						<div class="footer-card">
        							<span>2008</span>
-       							<span class="blue">10€</span>
+       							<span class="blue" id="price4">10€</span>
        						</div>
+       						<form name="quantity">
+									<label>Quantité :</label>
+									<input type="number" min="0" max="50" id="qt4">
+									<input type="button" value="panier" id="panier4">
+								</form>
+							<span id="tot4"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -492,8 +491,14 @@
        						<h3>Empire strike back</h3>
        						<div class="footer-card">
        							<span>1980</span>
-       							<span class="blue">7€</span>
+       							<span class="blue" id="price5">7€</span>
        						</div>
+       						<form name="quantity">
+									<label>Quantité :</label>
+									<input type="number" min="0" max="50" id="qt5">
+									<input type="button" value="panier" id="panier5">
+								</form>
+							<span id="tot5"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -502,8 +507,14 @@
        						<h3>Grave</h3>
        						<div class="footer-card">
        							<span>2016</span>
-       							<span class="blue">12€</span>
+       							<span class="blue" id="price6">12€</span>
        						</div>
+       						<form name="quantity">
+									<label>Quantité :</label>
+									<input type="number" min="0" max="50" id="qt6">
+									<input type="button" value="panier" id="panier6">
+								</form>
+							<span id="tot6"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">
@@ -512,8 +523,14 @@
        						<h3>Survive Style</h3>
        						<div class="footer-card">
        							<span>2004</span>
-       							<span class="blue">10€</span>
+       							<span class="blue" id="price7">10€</span>
        						</div>
+       						<form name="quantity">
+									<label>Quantité :</label>
+									<input type="number" min="0" max="50" id="qt7">
+									<input type="button" value="panier" id="panier7">
+							</form>
+							<span id="tot7"></span>	
        					</div>
        				</div>
        				<div class="col-lg-3 col-md-4 col-6 vignettes v-shop-js">

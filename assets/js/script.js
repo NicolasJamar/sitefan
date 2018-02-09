@@ -94,26 +94,49 @@ var clickPolice = false;
 
 
 // GOODIES : CALCUL PRIX
-var price = parseFloat($("#prc1").html());
-// var quantityB = $('#qt').val();
-
-var btn = [
-    $("#btnPlus1"),
-    $("#btnPlus2")
-];
-
     // input type='button'
-    //Bouton Plus
-btn[0].click(function(){
-var quantity = [
-    $("#qt1").val(),
-    $("#qt2").val()
-];
+$('#panier1').click(function(){
 
-    var price1 = parseFloat(quantity[0] * parseFloat($('#prc1').html())).toFixed(2);
-    console.log(price1);
+    var price1 = parseFloat($("#qt1").val() * parseFloat($('#price1').html())).toFixed(2);
     $('#tot1').html(price1);
 });
+
+$('#panier2').click(function(){
+
+    var price2 = parseFloat($("#qt2").val() * parseFloat($('#price2').html())).toFixed(2);
+    $('#tot2').html(price2);
+});
+
+$('#panier3').click(function(){
+
+    var price3 = parseFloat($("#qt3").val() * parseFloat($('#price3').html())).toFixed(2);
+    $('#tot3').html(price3);
+});
+
+$('#panier4').click(function(){
+
+    var price4 = parseFloat($("#qt4").val() * parseFloat($('#price4').html())).toFixed(2);
+    $('#tot4').html(price4);
+});
+
+$('#panier5').click(function(){
+
+    var price5 = parseFloat($("#qt5").val() * parseFloat($('#price5').html())).toFixed(2);
+    $('#tot5').html(price5);
+});
+
+$('#panier6').click(function(){
+
+    var price6 = parseFloat($("#qt6").val() * parseFloat($('#price6').html())).toFixed(2);
+    $('#tot6').html(price6);
+});
+
+$('#panier7').click(function(){
+
+    var price7 = parseFloat($("#qt7").val() * parseFloat($('#price7').html())).toFixed(2);
+    $('#tot7').html(price7);
+});
+
 
     //Bouton Moins
 // $('#btnMoins1').click(function(){
