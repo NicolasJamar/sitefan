@@ -134,35 +134,50 @@ $('#panier7').click(function(){
     //Modal : Total des achats
 $('#btnModalG').click(function(){
     $('#modalGoodies').addClass('d-block');
-        //find all images inside #goodies, make a copy and convert to an array;
+    // Find all images inside #goodies, make a copy and convert to an array;
     var goodiesImages = $('#goodies').find('img').clone().toArray();
+
+    // Creation array for goodies titles;
+    var goodiesTitles = $('#goodies').find('h3').clone().toArray();
+
+    // Creation array for Quantities;
+    var goodiesQuantities = [
+    parseFloat($('#qt1').val()),
+    parseFloat($('#qt2').val()),
+    parseFloat($('#qt3').val()),
+    parseFloat($('#qt4').val()),
+    parseFloat($('#qt5').val()),
+    parseFloat($('#qt6').val()),
+    parseFloat($('#qt7').val()),
+    ];
     
     // Take all the SubTotals in an array;
     var goodiesSousTot = [
-    parseFloat($('#tot1').html()),
-    parseFloat($('#tot2').html()),
-    parseFloat($('#tot3').html()),
-    parseFloat($('#tot4').html()),
-    parseFloat($('#tot5').html()),
-    parseFloat($('#tot6').html()),
-    parseFloat($('#tot7').html()),
+    parseFloat($('#tot1').html()).toFixed(2), //2 decimals
+    parseFloat($('#tot2').html()).toFixed(2),
+    parseFloat($('#tot3').html()).toFixed(2),
+    parseFloat($('#tot4').html()).toFixed(2),
+    parseFloat($('#tot5').html()).toFixed(2),
+    parseFloat($('#tot6').html()).toFixed(2),
+    parseFloat($('#tot7').html()).toFixed(2),
     ];
 
     //put all the subTotals in the modal "Total des achats";
     goodiesSousTot.forEach(function(prix, i){  
         if (goodiesSousTot[i] > 0){
            
-            $('.modal-body').prepend(goodiesImages[i]);  
-        }
-    })  
+            $('.colImage').prepend(goodiesImages[i]); 
+            $('.colTitle').prepend(goodiesTitles[i]);
+            $('.colQuantity').prepend(goodiesQuantities[i]);
+            $('.colPrice').prepend(goodiesSousTot[i]);
+        };
+        });  
 
 });
 
 $('.close').click(function(){
     $('#modalGoodies').removeClass('d-block');
 });
-
-
 
 
 // FORMULAIRE DE CONTACT
