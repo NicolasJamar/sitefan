@@ -146,8 +146,16 @@ $('#btnModalG').click(function(){
     ];
 
     // Creation array for goodies titles;
-    var goodiesTitles = $('#goodies').find('h3').clone().toArray();
-    console.log(goodiesTitles[0]);
+    var goodiesTitles = [
+    "L'étrange Noël de M. Jack",
+    "Elf",
+    "The Polar Express",
+    "Le père Noël est une ordure",
+    "Le père Noël",
+    "Julius et le père Noël",
+    "Santa Clause"
+    ];
+    // $('#goodies').find('h3').clone().toArray();
 
     // Creation array for Quantities;
     var goodiesQuantities = [
@@ -171,21 +179,29 @@ $('#btnModalG').click(function(){
     parseFloat($('#tot7').html()).toFixed(2),
     ];
 
+    var displayGoodies = "";
+
     //put all the subTotals in the modal "Total des achats";
     goodiesSousTot.forEach(function(prix, i){  
         if (goodiesSousTot[i] > 0){
 
-            var displayGoodies = "<div class='col-sm-3 colImage'>" 
+            displayGoodies += "<div class='col-sm-3 colImage'>" 
             + "<img class='card-img-top' alt='Goodies' src='" 
-            + goodiesImages[i] + "'>";
-            
+            + goodiesImages[i] + "'> </div>"
+            + "<div class='col-sm-3 colTitle'>"
+            + "<h3>" + goodiesTitles[i]+ "</h3></div>"
+            + "<div class='col-sm-3 colQuantity'>"
+            + goodiesQuantities[i] + "</div>"
+            + "<div class='col-sm-3 colPrice'>"
+            + goodiesSousTot[i] + "</div>";
            
-            $('.colImage').prepend(goodiesImages[i]); 
-            $('.colTitle').prepend(goodiesTitles[i]);
-            $('.colQuantity').prepend(goodiesQuantities[i]);
-            $('.colPrice').prepend(goodiesSousTot[i]);
+            // $('.colImage').prepend(goodiesImages[i]); 
+            // $('.colTitle').prepend(goodiesTitles[i]);
+            // $('.colQuantity').prepend(goodiesQuantities[i]);
+            // $('.colPrice').prepend(goodiesSousTot[i]);
         };
         });  
+    $('.modal-body').html(displayGoodies);
 
 });
 
