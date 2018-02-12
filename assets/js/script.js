@@ -135,10 +135,19 @@ $('#panier7').click(function(){
 $('#btnModalG').click(function(){
     $('#modalGoodies').addClass('d-block');
     // Find all images inside #goodies, make a copy and convert to an array;
-    var goodiesImages = $('#goodies').find('img').clone().toArray();
+    var goodiesImages = [
+    "assets/img/aff_11844672520160417163655.jpg",
+    "assets/img/aff_126320131220114843.jpg",
+    "assets/img/aff_230920131220115322.jpg",
+    "assets/img/aff_30904672520161205190723.jpg",
+    "assets/img/aff_33254820141014170309.jpg",
+    "assets/img/aff_41274672620161121180621.jpg",
+    "assets/img/aff_815420131220115902.jpg",
+    ];
 
     // Creation array for goodies titles;
     var goodiesTitles = $('#goodies').find('h3').clone().toArray();
+    console.log(goodiesTitles[0]);
 
     // Creation array for Quantities;
     var goodiesQuantities = [
@@ -165,6 +174,11 @@ $('#btnModalG').click(function(){
     //put all the subTotals in the modal "Total des achats";
     goodiesSousTot.forEach(function(prix, i){  
         if (goodiesSousTot[i] > 0){
+
+            var displayGoodies = "<div class='col-sm-3 colImage'>" 
+            + "<img class='card-img-top' alt='Goodies' src='" 
+            + goodiesImages[i] + "'>";
+            
            
             $('.colImage').prepend(goodiesImages[i]); 
             $('.colTitle').prepend(goodiesTitles[i]);
